@@ -1,15 +1,27 @@
-import { isSubsetOf, isSupersetOf } from './solution';
+import { merryChristmas } from './solution';
 
-describe('isSubsetOf', () => {
-  test('returns true if s1 is a subset of s2', () => {
-    expect(isSubsetOf(new Set([1, 2, 3]), new Set([1, 2, 3, 4]))).toBe(true);
-    expect(isSubsetOf(new Set([1, 2, 3]), new Set([1, 2, 4, 5]))).toBe(false);
-  });
+describe('', () => {
+  
 });
 
-describe('isSupersetOf', () => {
-  test('returns true if s1 is a superset of s2', () => {
-    expect(isSupersetOf(new Set([1, 2, 3, 4]), new Set([1, 2]))).toBe(true);
-    expect(isSupersetOf(new Set([1, 2, 3, 4]), new Set([1, 2, 5]))).toBe(false);
+describe('merryChristmas', () => {
+  it('returns correct result', function () {
+    const a = _ => "M",
+      b = _ => "e",
+      c = _ => "r",
+      d = _ => "y",
+      e = _ => "C",
+      f = _ => "h",
+      g = _ => "i",
+      h = _ => "s",
+      i = _ => "t",
+      j = _ => "m",
+      k = _ => "a",
+      l = _ => " ",
+      m = _ => "!";
+
+    const funcs = [a, b, c, d, e, f, g, h, i, j, k, l, m];
+
+    expect(merryChristmas(funcs)).toEqual('a,b,c,c,d,l,e,f,c,g,h,i,j,k,h,m');
   });
 });
