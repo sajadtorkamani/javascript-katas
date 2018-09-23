@@ -1,59 +1,33 @@
-import { aliBaba } from './solution';
+import { reverseAll, reverseLines, reverseOrder, reverseSections } from './solution';
 
-
-describe('aliBaba', () => {
-  test('returns correct result when the open and shut commands are both present ', () => {
-    const commands = [
-      "Open, Millet!", "Open, Maize!", "Open, Soybean!",
-      "Oh, Damn! I'm going to smash you into pieces!",
-      "Open, Sesame!", "God bless! A lot of treasures!",
-      "Why do I have only two hands?", "Shut, Maize!",
-      "Shut, Soybean!", "Please shut! Dear Mr. door!",
-      "Shut, Sesame!", "Haha, I'm so smart!"
-    ];
-
-    const expected = "Ali Baba got a lot of treasures and he lived a rich life.";
-
-    expect(aliBaba(commands)).toEqual(expected);
+describe('reverseOrder', () => {
+  test('reverses order of elements', () => {
+    expect(reverseOrder(['foo', 'bar', 'baz'])).toEqual(['baz', 'bar', 'foo']);
   });
-
-  test('returns correct result when only open command is present', () => {
-    const commands = [
-      "Open, Millet!", "Open, Maize!", "Open, Soybean!",
-      "Oh, Damn! I'm going to smash you into pieces!",
-      "Open, Sesame!", "God bless! A lot of treasures!",
-      "Why do I have only two hands?", "Shut, Maize!",
-      "Shut, Soybean!", "Please shut! Dear Mr. door!"
-    ];
-
-    const expected = "Ali Baba got a lot of treasure and he was finally killed by the robbers.";
-
-    expect(aliBaba(commands)).toEqual(expected);
-  });
-
-  test('returns correct result when shut command is present before open command', () => {
-    const commands = [
-      "Open, Millet!", "Open, Maize!", "Open, Soybean!",
-      "Oh, Damn! I'm going to smash you into pieces!",
-      "Shut, Sesame!", "Open, Sesame!", "Haha, I'm so smart!"
-    ];
-
-    const expected = "Ali Baba got a lot of treasure and he was finally killed by the robbers.";
-
-    expect(aliBaba(commands)).toEqual(expected);
-  });
-
-  test('returns correct result when open command is not present', () => {
-    const commands = [
-      "Open, Millet!", "Open, Maize!", "Open, Soybean!",
-      "Oh, Damn! I'm going to smash you into pieces!",
-      "Open, Millet!", "Open, Maize!", "Open, Soybean!",
-      "Oh, Damn! I'm going to smash you into pieces!"
-    ];
-
-    const expected = "Ali Baba didn't get the treasure and he was still a poor man.";
-
-    expect(aliBaba(commands)).toEqual(expected);
-  });
-
 });
+
+describe('reverseLines', () => {
+  test('reverses lines in string', () => {
+    expect(reverseLines('abc\n123\n!!!')).toEqual('!!!\n123\nabc');
+  });
+});
+
+describe('reverseSections', () => {
+  test('reverses sections within string', () => {
+    expect(reverseSections('xyz886abc#$%')).toEqual('zyx688cba%$#');
+  });
+});
+
+describe('reverseAll', () => {
+  test('returns correct result', () => {
+    expect(reverseAll(
+      ["abc123!@#\n314159", "987bbc\n#$%\nxyz886"]
+    )).toEqual(
+      ["zyx688\n%$#\n789cbb", "951413\ncba321#@!"]
+    );
+  });
+});
+
+// Test.assertSimilar(reverseAll(["abc123!@#\n314159","987bbc\n#$%\nxyz886"]),["zyx688\n%$#\n789cbb","951413\ncba321#@!"])
+// Test.assertSimilar(reverseAll(["JOVmG$&&?@\nJcE91632PXFhMAsRli\n30620DOXPZoO149\n5513??%-&@YUpyCmRUAO","_@!?#^15915736199076984"]),
+// ["^#?!@_48967099163751951","3155@&-%??OAURmCypUY\n02603OoZPXOD941\nEcJ23619ilRsAMhFXP\nGmVOJ@?&&$"])

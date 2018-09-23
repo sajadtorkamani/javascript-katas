@@ -1,19 +1,52 @@
-export const aliBaba = commands => {
-  const OPEN_COMMAND = 'Open, Sesame!';
-  const SHUT_COMMAND = 'Shut, Sesame!';
+/**
+ * Reverse order of array elements
+ *
+ * @param arr
+ * @returns {Array}
+ */
+export const reverseOrder = arr => arr.reverse();
 
-  if (commands.includes(OPEN_COMMAND)
-    && commands.includes(SHUT_COMMAND)
-    && commands.indexOf(OPEN_COMMAND) < commands.indexOf(SHUT_COMMAND)
-  ) {
-    return 'Ali Baba got a lot of treasures and he lived a rich life.';
-  }
+/**
+ * Reverse lines within string.
+ *
+ * @param str
+ * @returns {string}
+ */
+export const reverseLines = str => {
+  return str
+    .split('\n')
+    .reverse()
+    .join('\n');
+};
 
-  if ((commands.includes(OPEN_COMMAND) && !commands.includes(SHUT_COMMAND))
-    || commands.indexOf(SHUT_COMMAND) < commands.indexOf(OPEN_COMMAND)
-  ) {
-    return 'Ali Baba got a lot of treasure and he was finally killed by the robbers.';
-  }
+/**
+ * Reverse the sections within a string.
+ *
+ * @param str {string}
+ * @returns {string}
+ */
+export const reverseSections = str => {
+  return str.match(/([a-z]+)|([0-9]+)|([^a-z0-9]+)/gi)
+    .map(section => section.split('').reverse().join(''))
+    .join('');
+};
 
-  return 'Ali Baba didn\'t get the treasure and he was still a poor man.';
+export const reverseAll = arr => {
+  let result;
+
+  // Reverse order
+  result = reverseOrder(arr);
+
+  // Reverse lines
+  result = result.map(reverseLines);
+
+  // Reverse sections within the each line.
+  result = result.map(element => {
+    return element
+      .split('\n')
+      .map(reverseSections)
+      .join('\n');
+  });
+
+  return result;
 };
