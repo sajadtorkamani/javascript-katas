@@ -1,8 +1,15 @@
-export const isNarcissistic = num => {
-  const digits = num
-    .toString()
-    .split('')
-    .map(Number);
+export const change = (customer, items, cash) => {
+  const itemsTotal = items.reduce((a, v) => a + v);
+  let change = cash - itemsTotal;
 
-  return digits.reduce((acc, val) => acc += Math.pow(val, digits.length), 0) === num;
+  if (customer === 'John' && change > 0) {
+    const decimalPortion = (change - Number.parseInt(change)) * 2;
+    return +(Number.parseInt(change) + decimalPortion).toFixed(2);
+  }
+
+  if (customer === 'John' && change <= 0) {
+    return 0;
+  }
+
+  return +change.toFixed(2);
 };
