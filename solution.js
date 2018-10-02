@@ -1,7 +1,8 @@
-export const switcheroo = str => {
-  return str
-    .replace(/a/g, 'A')
-    .replace(/b/g, 'B')
-    .replace(/A/g, 'b')
-    .replace(/B/g, 'a')
+export const isNarcissistic = num => {
+  const digits = num
+    .toString()
+    .split('')
+    .map(Number);
+
+  return digits.reduce((acc, val) => acc += Math.pow(val, digits.length), 0) === num;
 };
