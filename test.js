@@ -1,13 +1,11 @@
-import { change } from './solution';
+import { mergeArrays } from './solution';
 
-describe('change', () => {
-  test('returns correct change for customer who is not John', () => {
-    expect(change('Alice', [4, 2, 1.5], 10)).toEqual(2.5);
-    expect(change('Bob', [7], 5)).toEqual(-2);
-  });
-
-  test('returns correct change for customer who is John', () => {
-    expect(change('John', [1.2, 1.4], 5)).toEqual(2.8);
-    expect(change('John', [7], 5)).toEqual(0);
+describe('mergeArrays', () => {
+  test('merges arrays correctly', () => {
+    expect(mergeArrays(
+      [1, 2, 3, 4, 5, 6, 7, 8], ['a', 'b', 'c', 'd', 'e'])
+    ).toEqual(
+      [1, "a", 2, "b", 3, "c", 4, "d", 5, "e", 6, 7, 8]
+    );
   });
 });

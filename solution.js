@@ -1,15 +1,11 @@
-export const change = (customer, items, cash) => {
-  const itemsTotal = items.reduce((a, v) => a + v);
-  let change = cash - itemsTotal;
+export const mergeArrays = (a1, a2) => {
+  let mergedArray = [];
+  const longestLength = Math.max(...[a1.length, a2.length]);
 
-  if (customer === 'John' && change > 0) {
-    const decimalPortion = (change - Number.parseInt(change)) * 2;
-    return +(Number.parseInt(change) + decimalPortion).toFixed(2);
+  for (let i = 0; i < longestLength; i++) {
+    if (a1[i] !== undefined) mergedArray.push(a1[i]);
+    if (a2[i] !== undefined) mergedArray.push(a2[i]);
   }
 
-  if (customer === 'John' && change <= 0) {
-    return 0;
-  }
-
-  return +change.toFixed(2);
+  return mergedArray;
 };
