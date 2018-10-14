@@ -1,11 +1,20 @@
-export const mergeArrays = (a1, a2) => {
-  let mergedArray = [];
-  const longestLength = Math.max(...[a1.length, a2.length]);
+/**
+ * @constructor
+ */
+export function List() {
+}
 
-  for (let i = 0; i < longestLength; i++) {
-    if (a1[i] !== undefined) mergedArray.push(a1[i]);
-    if (a2[i] !== undefined) mergedArray.push(a2[i]);
-  }
+/**
+ * @param nums {Array<number>}
+ * @param digits {Array<number>}
+ * @returns {Array}
+ */
+List.prototype.countSpecDigits = function (nums, digits) {
+  const numsAsString = nums.join('');
 
-  return mergedArray;
+  const digitCount = digit => {
+    return (numsAsString.match(new RegExp(digit, 'g')) || []).length;
+  };
+
+  return digits.map(digit => [digit, digitCount(digit)]);
 };
