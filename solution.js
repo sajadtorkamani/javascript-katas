@@ -1,20 +1,10 @@
-/**
- * @constructor
- */
-export function List() {
-}
+export const similarity = (a, b) => {
+  const uniqueNums = Array.from(
+    new Set(a.concat(b))
+  );
 
-/**
- * @param nums {Array<number>}
- * @param digits {Array<number>}
- * @returns {Array}
- */
-List.prototype.countSpecDigits = function (nums, digits) {
-  const numsAsString = nums.join('');
-
-  const digitCount = digit => {
-    return (numsAsString.match(new RegExp(digit, 'g')) || []).length;
-  };
-
-  return digits.map(digit => [digit, digitCount(digit)]);
+  return uniqueNums
+    .filter(num => {
+      return a.includes(num) && b.includes(num)
+  }).length / uniqueNums.length;
 };
