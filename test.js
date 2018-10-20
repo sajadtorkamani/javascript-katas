@@ -1,11 +1,11 @@
 import assert from 'assert';
-import { one } from './solution';
+import { drawSpider } from './solution';
 
-describe('one', () => {
+describe('drawSpider', () => {
   test('returns correct result', () => {
-    assert.equal(one([1,2,3,4,5], function(item){ return item<2}), true)
-    assert.equal(one([1,2,3,4,5], function(item){ return item%2 }), false, "more than 1 item are odd")
-    assert.equal(one([1,2,3,4,5], function(item){ return item>5 }), false, "none item is greater than 5")
+    assert.equal(drawSpider(1, 1, "W", "o"), "^(oWo)^")    ;
+    assert.equal(drawSpider(2, 2, "w", "O"), "/\\((OOwOO))/\\");
+    assert.equal(drawSpider(3, 3, "w", "0"), "/╲(((0000w0000)))╱\\");
   });
 });
 

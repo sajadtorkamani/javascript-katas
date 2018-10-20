@@ -1,14 +1,23 @@
-export const one = (arr, fn) => {
-  let count = 0;
+export const drawSpider = (legType, bodyType, mouth, eye) => {
+  const legTypes = {
+    1: ['^', '^'],
+    2: ['/\\', '/\\'],
+    3: ['/╲', '╱\\'],
+    4: ['╱╲', '╱╲']
+  };
 
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
+  const bodyTypes = {
+    1: ['(', ')'],
+    2: ['((', '))'],
+    3: ['(((', ')))']
+  };
 
-    if (fn(element)) { count += 1; }
+  const totalEyes = Math.pow(2, bodyType);
 
-    // Optimisation - don't bother processing any more elements
-    if (count > 1) { return false; }
-  }
+  const eyes = eye.repeat(totalEyes/2);
+  const body = bodyTypes[bodyType];
+  const legs = legTypes[legType];
 
-  return count === 1;
-}
+
+  return `${legs[0]}${body[0]}${eyes}${mouth}${eyes}${body[1]}${legs[1]}`;
+};
