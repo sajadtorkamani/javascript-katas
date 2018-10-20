@@ -1,7 +1,10 @@
-import { similarity } from './solution';
+import { fireFight } from './solution';
 
-describe('similarity', () => {
+describe('fireFight', () => {
   test('returns correct result', () => {
-    expect(similarity([1, 2, 4, 6, 7], [2, 3, 4, 7])).toEqual(0.5);
+    expect(fireFight(
+      "Boat Rudder Mast Boat Hull Water Fire Boat Deck Hull Fire Propeller Deck Fire Deck Boat Mast"
+    )).toEqual(
+      "Boat Rudder Mast Boat Hull Water ~~ Boat Deck Hull ~~ Propeller Deck ~~ Deck Boat Mast");
   });
 });
