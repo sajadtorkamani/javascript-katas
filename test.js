@@ -1,10 +1,11 @@
-import { fireFight } from './solution';
+import assert from 'assert';
+import { one } from './solution';
 
-describe('fireFight', () => {
+describe('one', () => {
   test('returns correct result', () => {
-    expect(fireFight(
-      "Boat Rudder Mast Boat Hull Water Fire Boat Deck Hull Fire Propeller Deck Fire Deck Boat Mast"
-    )).toEqual(
-      "Boat Rudder Mast Boat Hull Water ~~ Boat Deck Hull ~~ Propeller Deck ~~ Deck Boat Mast");
+    assert.equal(one([1,2,3,4,5], function(item){ return item<2}), true)
+    assert.equal(one([1,2,3,4,5], function(item){ return item%2 }), false, "more than 1 item are odd")
+    assert.equal(one([1,2,3,4,5], function(item){ return item>5 }), false, "none item is greater than 5")
   });
 });
+
