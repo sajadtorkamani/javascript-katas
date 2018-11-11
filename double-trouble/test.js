@@ -1,6 +1,6 @@
 import { trouble } from './solution';
 
-describe('#trouble', () => {
+describe.skip('#trouble', () => {
   test('returns correct result', () => {
     // expect(trouble([1, 3, 5, 6, 7, 4, 3], 7)).toEqual([1, 3, 5, 6, 7, 4]);
     // expect(trouble([4, 1, 1, 1, 4], 2)).toEqual([4, 1, 4]);
