@@ -16,5 +16,8 @@
   "description": "Boilerplate for doing code katas",
   "main": "index.js",
   "author": "Sajad Torkamani",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
 }
