@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/the-office-iv-find-a-meeting-room/train/javascript
