@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/rap-name-generator/train/javascript
