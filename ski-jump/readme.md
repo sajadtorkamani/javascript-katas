@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/ski-jump/train/javascript
