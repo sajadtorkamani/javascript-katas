@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/coding-3min-a-star-b-equals-c/train/javascript
