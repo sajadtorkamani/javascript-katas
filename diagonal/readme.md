@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/principal-diagonal-vs-secondary-diagonal/train/javascript
