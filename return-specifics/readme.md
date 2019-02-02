@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/return-specifics-from-an-object/train/javascript
