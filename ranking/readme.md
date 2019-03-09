@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/ranking-position/train/javascript
