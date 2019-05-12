@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/evil-autocorrect-prank/train/javascript
