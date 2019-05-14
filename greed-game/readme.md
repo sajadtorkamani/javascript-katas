@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/greed-is-good/train/javascript
