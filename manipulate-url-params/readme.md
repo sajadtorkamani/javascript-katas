@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/manipulate-url-parameters/train/javascript
