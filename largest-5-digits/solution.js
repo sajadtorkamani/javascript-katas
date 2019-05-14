@@ -4,8 +4,8 @@
  */
 const solution = num => {
   let fiveDigitsRegex = /\d(?=(\d{4}))/g;
-  let match;
   let fiveDigitsList = [];
+  let match;
 
   while (match = fiveDigitsRegex.exec(num)) {
     fiveDigitsList.push(match[0] + match[1]);
