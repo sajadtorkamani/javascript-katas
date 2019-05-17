@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/coding-meetup-number-8-higher-order-functions-series-will-all-continents-be-represented/train/javascript
