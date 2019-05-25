@@ -17,7 +17,7 @@ describe('addUsername', () => {
         continent: 'Europe',
         age: 30,
         language: 'Ruby',
-        username: 'emilyn1990'
+        username: 'emilyn1990',
       },
       {
         firstName: 'Nor',
