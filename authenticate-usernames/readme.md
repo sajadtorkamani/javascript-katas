@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/authenticate-a-list-of-usernames/train/javascript
