@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/find-all-pairs-1/train/javascript
