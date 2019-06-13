@@ -1,8 +1,7 @@
-const streetFighterSelection = (fighters, startPos, moves) => {
+const streetFighterSelection = (fighters, position, moves) => {
   const ROW_LEN = 2;
   const COL_LEN = 6;
 
-  let position = startPos;
   let [row, col] = position;
 
   return moves.map(move => {
