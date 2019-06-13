@@ -1,6 +1,6 @@
 import mineLocation from './solution';
 
-describe.only('mineLocation', () => {
+describe('mineLocation', () => {
   test('returns correct result', () => {
     expect(mineLocation([[1, 0], [0, 0]])).toEqual([0, 0]);
     expect(mineLocation([[1, 0, 0], [0, 0, 0], [0, 0, 0]])).toEqual([0, 0]);

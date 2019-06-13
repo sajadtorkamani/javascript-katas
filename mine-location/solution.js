@@ -1,5 +1,4 @@
 /**
- *
  * @param {Array<Array>} field
  * @returns {Array<number>}
  */
