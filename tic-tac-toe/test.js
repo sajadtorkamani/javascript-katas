@@ -1,6 +1,6 @@
 import isSolved from './solution';
 
-describe.only('isSolved', () => {
+describe('isSolved', () => {
   test('detects horizontal win', () => {
     // prettier-ignore
     const board = [

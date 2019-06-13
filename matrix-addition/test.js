@@ -1,7 +1,7 @@
 import matrixAddition from './solution';
 
 describe('matrixAddition', () => {
-  test.only('returns correct result', () => {
+  test('returns correct result', () => {
     // prettier-ignore
     expect(
       matrixAddition(
