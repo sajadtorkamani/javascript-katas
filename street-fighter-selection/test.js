@@ -1,6 +1,6 @@
 import streetFighterSelection from './solution';
 
-describe.only('streetFighterSelection', () => {
+describe('streetFighterSelection', () => {
   const FIGHTERS = [
     ['Ryu', 'E.Honda', 'Blanka', 'Guile', 'Balrog', 'Vega'],
     ['Ken', 'Chun Li', 'Zangief', 'Dhalsim', 'Sagat', 'M.Bison']
