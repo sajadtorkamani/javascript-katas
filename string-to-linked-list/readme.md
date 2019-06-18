@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/parse-a-linked-list-from-a-string/train/javascript

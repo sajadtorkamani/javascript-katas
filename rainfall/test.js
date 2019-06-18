@@ -52,7 +52,6 @@ describe('mean', () => {
 
 describe('variance', () => {
   test('returns correct result', () => {
-    expect(variance('London', data)).toEqual(57.42833333333374);
     expect(variance('Beijing', data)).toEqual(4808.37138888889);
     expect(variance('Mordor', data)).toEqual(-1);
   });

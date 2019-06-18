@@ -10,15 +10,7 @@ const stringify = node => {
     return 'null';
   }
 
-  let current = node;
-  let strings = [];
-
-  while (current !== null) {
-    strings.push(current.data);
-    current = current.next;
-  }
-
-  return [...strings, 'null'].join(' -> ');
+  return `${node.data} -> ${stringify(node.next)}`;
 };
 
 export default stringify;
