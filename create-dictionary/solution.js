@@ -8,6 +8,7 @@ export const createDict = (keys, values) => {
 
   keys.forEach((key, index) => {
     const value = typeof values[index] !== 'undefined' ? values[index] : null;
+
     dictionary[key] = value;
   });
 
