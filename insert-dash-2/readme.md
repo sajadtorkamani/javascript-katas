@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/insert-dashes-2/train/javascript

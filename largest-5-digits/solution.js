@@ -7,7 +7,7 @@ const solution = num => {
   let fiveDigitsList = [];
   let match;
 
-  while (match = fiveDigitsRegex.exec(num)) {
+  while ((match = fiveDigitsRegex.exec(num))) {
     fiveDigitsList.push(match[0] + match[1]);
   }
 
