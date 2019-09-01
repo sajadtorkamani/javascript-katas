@@ -1,4 +1,19 @@
 {
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "Boilerplate for doing code katas",
+  "main": "index.js",
+  "author": "Sajad Torkamani",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "date-fns": "^1.30.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mem": "^5.1.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
@@ -11,19 +26,5 @@
     "eslint-plugin-prettier": "^3.1.0",
     "jest": "^23.6.0",
     "prettier": "^1.18.2"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "name": "katas",
-  "version": "1.0.0",
-  "description": "Boilerplate for doing code katas",
-  "main": "index.js",
-  "author": "Sajad Torkamani",
-  "license": "MIT",
-  "dependencies": {
-    "date-fns": "^1.30.1",
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0"
   }
 }
