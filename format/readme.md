@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/string-insert-values/train/javascript
