@@ -8,7 +8,7 @@ const addLetters = (...letters: string[]): string => {
     0
   );
 
-  return sum === 26 ? 'z' : String.fromCharCode(96 + (sum % 26));
+  return sum % 26 === 0 ? 'z' : String.fromCharCode(96 + (sum % 26));
 };
 
 export default addLetters;
