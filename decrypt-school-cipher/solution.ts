@@ -1,10 +1,6 @@
 const decrypt = (encoded: string): string => {
   return encoded
-    .replace(/'\d+'/g, m => {
-      const charCode = +m.replace(/'/g, '');
-
-      return String.fromCharCode(charCode);
-    })
+    .replace(/'(\d+)'/g, (_, charCode) => String.fromCharCode(+charCode))
     .split('')
     .reverse()
     .join('');
