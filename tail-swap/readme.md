@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/tail-swap/train/javascript
