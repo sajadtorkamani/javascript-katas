@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/reversing-fun/train/javascript
