@@ -1,10 +1,10 @@
 import addLetters from './solution';
 
 describe('addLetters', () => {
-  test.only('returns correct result', () => {
-    // expect(addLetters('a', 'b', 'c')).toEqual('f');
-    // expect(addLetters('a', 'b')).toEqual('c');
-    // expect(addLetters('z')).toEqual('z');
+  test('returns correct result', () => {
+    expect(addLetters('a', 'b', 'c')).toEqual('f');
+    expect(addLetters('a', 'b')).toEqual('c');
+    expect(addLetters('z')).toEqual('z');
     expect(addLetters('u', 'p', 'b', 'm', 'h', 'h', 'a', 'i')).toEqual('z');
   });
 
