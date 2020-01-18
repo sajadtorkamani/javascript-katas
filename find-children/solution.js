@@ -14,7 +14,7 @@ const findChildren = str => {
 
       return parent + parentChildren;
     })
-    .sort((a, b) => a[0] > b[0])
+    .sort((a, b) => a[0].localeCompare(b[0]))
     .join('');
 };
 
