@@ -2,7 +2,7 @@ const songDecoder = song => {
   return song
     .split('WUB')
     .filter(word => word)
-    .join(' ');
-};
+    .join(' ')
+}
 
-export default songDecoder;
+export default songDecoder

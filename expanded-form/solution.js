@@ -6,15 +6,17 @@ const expandedForm = num => {
     .toString()
     .split('')
     .map((val, index, nums) => {
-      if (val === '0') { return; }
+      if (val === '0') {
+        return
+      }
 
-      const position = index + 1;
-      const numZeros = Math.abs(position - nums.length);
+      const position = index + 1
+      const numZeros = Math.abs(position - nums.length)
 
-      return val + '0'.repeat(numZeros);
+      return val + '0'.repeat(numZeros)
     })
     .filter(Boolean)
-    .join(' + ');
-};
+    .join(' + ')
+}
 
-export default expandedForm;
+export default expandedForm

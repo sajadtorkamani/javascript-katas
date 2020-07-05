@@ -1,17 +1,18 @@
 const encode = (str, keyNum) => {
-  const key = keyNum.toString().split('').map(Number);
-  let keyIndex = 0;
-
-  return str
+  const key = keyNum
+    .toString()
     .split('')
-    .map(letter => {
-      const num = letter.charCodeAt(0) - 96;
-      const encodedNum = num + key[keyIndex];
+    .map(Number)
+  let keyIndex = 0
 
-      keyIndex = (keyIndex === key.length - 1) ? 0 : keyIndex + 1;
+  return str.split('').map(letter => {
+    const num = letter.charCodeAt(0) - 96
+    const encodedNum = num + key[keyIndex]
 
-      return encodedNum;
-    });
-};
+    keyIndex = keyIndex === key.length - 1 ? 0 : keyIndex + 1
 
-export default encode;
+    return encodedNum
+  })
+}
+
+export default encode

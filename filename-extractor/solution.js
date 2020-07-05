@@ -3,8 +3,8 @@ class FileNameExtractor {
    * @param str {string}
    */
   static extractFileName(str) {
-    return str.replace(/^\d+_|\.\w+$/g, '');
+    return str.replace(/^\d+_|\.\w+$/g, '')
   }
 }
 
-export default FileNameExtractor;
+export default FileNameExtractor

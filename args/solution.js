@@ -2,7 +2,7 @@ const args = cmd => {
   return cmd
     .trim()
     .replace(/\s*[|>;&].*/, '')
-    .split(' ');
-};
+    .split(' ')
+}
 
-export default args;
+export default args

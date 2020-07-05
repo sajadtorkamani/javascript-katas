@@ -3,7 +3,7 @@ const decrypt = (encoded: string): string => {
     .replace(/'(\d+)'/g, (_, charCode) => String.fromCharCode(+charCode))
     .split('')
     .reverse()
-    .join('');
-};
+    .join('')
+}
 
-export default decrypt;
+export default decrypt

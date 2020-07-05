@@ -2,18 +2,18 @@ export const digitsAverage = num => {
   let result = num
     .toString()
     .split('')
-    .map(Number);
+    .map(Number)
 
   while (result.length > 1) {
-    let iterationResult = [];
+    let iterationResult = []
 
     for (let i = 0; i < result.length - 1; i++) {
-      const average = Math.ceil((result[i] + result[i + 1]) / 2);
-      iterationResult.push(average);
+      const average = Math.ceil((result[i] + result[i + 1]) / 2)
+      iterationResult.push(average)
     }
 
-    result = iterationResult;
+    result = iterationResult
   }
 
-  return result[0];
-};
+  return result[0]
+}

@@ -1,16 +1,16 @@
 export const trouble = (nums, target) => {
-  let indexesToRemove = [];
+  let indexesToRemove = []
 
   for (let index = 0; index < nums.length - 1; index++) {
-    const currentNum = nums[index];
-    const nextNum = nums[index + 1];
+    const currentNum = nums[index]
+    const nextNum = nums[index + 1]
 
     if (currentNum + nextNum === target) {
-      indexesToRemove.push(index + 1);
+      indexesToRemove.push(index + 1)
     }
   }
 
-  console.log(indexesToRemove);
+  console.log(indexesToRemove)
 
-  return nums.filter((num, index) => !indexesToRemove.includes(index));
-};
+  return nums.filter((num, index) => !indexesToRemove.includes(index))
+}

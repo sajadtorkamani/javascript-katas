@@ -12,11 +12,11 @@ const detectOperator = (phoneNum: number): string => {
     '097': 'Kyivstar',
     '098': 'Kyivstar',
     '099': 'MTS'
-  };
+  }
 
-  const operatorCode = phoneNum.toString().substr(1, 3);
+  const operatorCode = phoneNum.toString().substr(1, 3)
 
-  return dictionary[operatorCode] || 'no info';
-};
+  return dictionary[operatorCode] || 'no info'
+}
 
-export default detectOperator;
+export default detectOperator

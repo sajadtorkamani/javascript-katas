@@ -4,13 +4,13 @@
  * @returns {Object}
  */
 export const createDict = (keys, values) => {
-  let dictionary = {};
+  let dictionary = {}
 
   keys.forEach((key, index) => {
-    const value = typeof values[index] !== 'undefined' ? values[index] : null;
+    const value = typeof values[index] !== 'undefined' ? values[index] : null
 
-    dictionary[key] = value;
-  });
+    dictionary[key] = value
+  })
 
-  return dictionary;
-};
+  return dictionary
+}

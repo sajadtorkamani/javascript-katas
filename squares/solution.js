@@ -5,15 +5,15 @@
  */
 export const squares = (start, count) => {
   if (count <= 0) {
-    return [];
+    return []
   }
 
-  let squares = [start];
+  let squares = [start]
 
   for (let i = 1; i < count; i++) {
-    const prevNum = squares[i - 1];
-    squares.push(prevNum * prevNum);
+    const prevNum = squares[i - 1]
+    squares.push(prevNum * prevNum)
   }
 
-  return squares;
-};
+  return squares
+}

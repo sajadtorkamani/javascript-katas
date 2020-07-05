@@ -1,5 +1,5 @@
 const roundToFive = nums => {
-  return nums.map(num => Math.round(num / 5) * 5);
-};
+  return nums.map(num => Math.round(num / 5) * 5)
+}
 
-export default roundToFive;
+export default roundToFive

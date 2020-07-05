@@ -7,7 +7,7 @@ const dashatize = num => {
     .replace(/[13579]/g, m => `-${m}-`)
     .replace(/--/g, '-')
     .replace(/^-/, '')
-    .replace(/-$/, '');
-};
+    .replace(/-$/, '')
+}
 
-export default dashatize;
+export default dashatize

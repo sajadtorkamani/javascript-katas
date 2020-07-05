@@ -8,9 +8,9 @@ const smallWordHelper = str => {
     .map(word => {
       return word.length <= 3
         ? word.toUpperCase()
-        : word.replace(/[aeiou]/gi, '');
+        : word.replace(/[aeiou]/gi, '')
     })
-    .join(' ');
-};
+    .join(' ')
+}
 
-export default smallWordHelper;
+export default smallWordHelper

@@ -7,10 +7,8 @@ const sumConsecutives = nums => {
     .toString()
     .match(/(-?\d+)(,\1)*/g)
     .map(consecutiveNumsStr => {
-      return consecutiveNumsStr
-        .split(',')
-        .reduce((a, b) => a + Number(b), 0);
-    });
-};
+      return consecutiveNumsStr.split(',').reduce((a, b) => a + Number(b), 0)
+    })
+}
 
-export default sumConsecutives;
+export default sumConsecutives

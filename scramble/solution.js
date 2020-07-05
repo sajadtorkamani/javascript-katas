@@ -1,15 +1,13 @@
 const scramble = (str, positions) => {
-  let result = new Array(str.length).fill();
-  
-  str 
-    .split('')
-    .forEach((letter, index) => {
-      const position = positions[index];
+  let result = new Array(str.length).fill()
 
-      result[position] = letter;
-    });
+  str.split('').forEach((letter, index) => {
+    const position = positions[index]
 
-  return result.join('');
-};
+    result[position] = letter
+  })
 
-export default scramble;
+  return result.join('')
+}
+
+export default scramble

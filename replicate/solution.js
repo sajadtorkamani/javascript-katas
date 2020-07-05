@@ -1,7 +1,5 @@
 const replicate = (times, number) => {
-  return times > 0
-    ? new Array(times).fill(number)
-    : [];
-};
+  return times > 0 ? new Array(times).fill(number) : []
+}
 
-export default replicate;
+export default replicate

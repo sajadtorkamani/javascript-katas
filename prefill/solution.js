@@ -4,10 +4,10 @@
  */
 const prefill = (n, val) => {
   if (n === undefined || !/^\d+$/.test(n.toString())) {
-    throw new TypeError(`${n} is invalid`);
+    throw new TypeError(`${n} is invalid`)
   }
 
-  return new Array(+n).fill(val);
-};
+  return new Array(+n).fill(val)
+}
 
-export default prefill;
+export default prefill

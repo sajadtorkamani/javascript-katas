@@ -6,9 +6,9 @@ const duplicates = nums => {
   const matches = nums
     .sort((a, b) => a - b)
     .toString()
-    .match(/(\b\d+\b),\1/g);
+    .match(/(\b\d+\b),\1/g)
 
-  return (matches || []).length;
-};
+  return (matches || []).length
+}
 
-export default duplicates;
+export default duplicates

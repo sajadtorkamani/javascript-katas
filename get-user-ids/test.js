@@ -1,4 +1,4 @@
-import getUsersIds from './solution';
+import getUsersIds from './solution'
 
 describe('getUserIds', () => {
   test('returns correct result', () => {
@@ -6,13 +6,13 @@ describe('getUserIds', () => {
       '12 ab',
       '',
       'mixedchars'
-    ]);
+    ])
     expect(getUsersIds('  uidin name whitespace')).toEqual([
       'in name whitespace'
-    ]);
-    expect(getUsersIds('uid##doublehashtag')).toEqual(['doublehashtag']);
-    expect(getUsersIds('uidMultipleuid')).toEqual(['multipleuid']);
-    expect(getUsersIds(' uidT#e#S#t# ')).toEqual(['test']);
+    ])
+    expect(getUsersIds('uid##doublehashtag')).toEqual(['doublehashtag'])
+    expect(getUsersIds('uidMultipleuid')).toEqual(['multipleuid'])
+    expect(getUsersIds(' uidT#e#S#t# ')).toEqual(['test'])
     expect(
       getUsersIds(
         'uid1234, uid12, uid1234567890, uidHaCk  eR, uid 123, uid1234#, uidPASsword'
@@ -25,6 +25,6 @@ describe('getUserIds', () => {
       '123',
       '1234',
       'password'
-    ]);
-  });
-});
+    ])
+  })
+})

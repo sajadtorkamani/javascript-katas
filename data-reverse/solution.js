@@ -9,7 +9,7 @@ const dataReverse = data => {
     .reverse()
     .join('')
     .split('')
-    .map(Number);
-};
+    .map(Number)
+}
 
-export default dataReverse;
+export default dataReverse

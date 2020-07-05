@@ -1,4 +1,4 @@
-import explode from './solution';
+import explode from './solution'
 
 describe('explode', () => {
   test('returns correct result', () => {
@@ -8,13 +8,13 @@ describe('explode', () => {
       ['0', ''],
       ['000', ''],
       ['123', '122333']
-    ];
+    ]
 
     for (let i = 0; i < tests.length; i++) {
-      const input = tests[i][0];
-      const expectedOutput = tests[i][1];
+      const input = tests[i][0]
+      const expectedOutput = tests[i][1]
 
-      expect(explode(input)).toEqual(expectedOutput);
+      expect(explode(input)).toEqual(expectedOutput)
     }
-  });
-});
+  })
+})

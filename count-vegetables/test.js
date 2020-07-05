@@ -1,9 +1,9 @@
-import countVegetables from './solution';
+import countVegetables from './solution'
 
 describe('countVegetables', () => {
   test('returns correct result', () => {
     const input =
-      'potato tofu cucumber cabbage turnip pepper onion carrot celery mushroom potato tofu cucumber cabbage';
+      'potato tofu cucumber cabbage turnip pepper onion carrot celery mushroom potato tofu cucumber cabbage'
 
     const expectedOuput = [
       [2, 'tofu'],
@@ -16,10 +16,10 @@ describe('countVegetables', () => {
       [1, 'mushroom'],
       [1, 'celery'],
       [1, 'carrot']
-    ];
+    ]
 
     expect(countVegetables(input)).toEqual(
       expect.arrayContaining(expectedOuput)
-    );
-  });
-});
+    )
+  })
+})

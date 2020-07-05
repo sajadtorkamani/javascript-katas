@@ -10,8 +10,8 @@ const getUsersIds = str => {
       return item
         .trim()
         .replace(/#/g, '')
-        .replace(/^uid\s*/, '');
-    });
-};
+        .replace(/^uid\s*/, '')
+    })
+}
 
-export default getUsersIds;
+export default getUsersIds

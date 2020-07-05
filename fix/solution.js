@@ -2,7 +2,7 @@ const fix = paragraph => {
   return paragraph
     .split('. ')
     .map(sentence => sentence.replace(/^\w/, m => m.toUpperCase()))
-    .join('. ');
-};
+    .join('. ')
+}
 
-export default fix;
+export default fix

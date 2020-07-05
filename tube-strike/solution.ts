@@ -1,17 +1,17 @@
-const WALK_SPEED = 5;
-const BUS_SPEED = 8;
+const WALK_SPEED = 5
+const BUS_SPEED = 8
 
 export const calculator = (
   walkDistance: number,
   busDriveDistance: number,
   busWalkDistance: number
 ): 'Bus' | 'Walk' => {
-  const walkTime = walkDistance / WALK_SPEED;
+  const walkTime = walkDistance / WALK_SPEED
   const busTime = (busDriveDistance / BUS_SPEED) + (busWalkDistance / WALK_SPEED); // prettier-ignore
 
   // Walk is over 2 hours
   if (walkTime > 2) {
-    return 'Bus';
+    return 'Bus'
   }
 
   // Walk is under 10 minutes
@@ -20,5 +20,5 @@ export const calculator = (
     return 'Walk';
   }
 
-  return walkTime <= busTime ? 'Walk' : 'Bus';
-};
+  return walkTime <= busTime ? 'Walk' : 'Bus'
+}

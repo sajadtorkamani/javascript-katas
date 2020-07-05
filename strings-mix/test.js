@@ -1,4 +1,4 @@
-import mix, { getMultiOccurringLetterCounts } from './solution';
+import mix, { getMultiOccurringLetterCounts } from './solution'
 
 describe('solution', () => {
   describe('mix', () => {
@@ -9,13 +9,17 @@ describe('solution', () => {
       // expect(mix('Lords of the Fallen', 'gamekult')).toEqual('1:ee/1:ll/1:oo');
       // expect(mix('codewars', 'codewars')).toEqual('');
       // expect(mix('A generation must confront the looming ', 'codewarrs')).toEqual('1:nnnnn/1:ooooo/1:tttt/1:eee/1:gg/1:ii/1:mm/=:rr');
-      expect(mix('(trliKowdaHudnsTkgouVrgpi@wksz', 'Lxspt/iiosUokmj+pvfqKujfnBomgt')).toEqual('2:ooo/1:dd/1:gg/1:kk/1:rr/1:uu/1:ww/2:ff/2:jj/2:mm/2:pp/2:tt/=:ii/=:ss');
-    });
-  });
+      expect(
+        mix('(trliKowdaHudnsTkgouVrgpi@wksz', 'Lxspt/iiosUokmj+pvfqKujfnBomgt')
+      ).toEqual(
+        '2:ooo/1:dd/1:gg/1:kk/1:rr/1:uu/1:ww/2:ff/2:jj/2:mm/2:pp/2:tt/=:ii/=:ss'
+      )
+    })
+  })
 
   describe('getMultiOccurringLettersCounts', () => {
     test('returns counts of lowercase letters that appear atleast twice in string', () => {
-      expect(getMultiOccurringLetterCounts('foo baar')).toEqual({ o: 2, a: 2 });
-    });
-  });
-});
+      expect(getMultiOccurringLetterCounts('foo baar')).toEqual({ o: 2, a: 2 })
+    })
+  })
+})

@@ -1,4 +1,5 @@
 # [Kill the k-th bit](https://www.codewars.com/kata/simple-fun-number-8-kill-k-th-bit/train/javascript)
+
 Task
 In order to stop the Mad Coder evil genius you need to decipher the encrypted message he sent to his minions. The message contains several numbers that, when typed into a supercomputer, will launch a missile into the sky blocking out the sun, and making all the people on Earth grumpy and sad.
 

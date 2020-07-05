@@ -7,14 +7,16 @@
  * @return {string}
  */
 const numberToMoney = num => {
-  const thousands = formatAsThousands(parseInt(num));
-  const decimals = num.toString().match(/\.(\d){2}/)[0];
-  
-  return `${thousands}${decimals}`
-    // Removing trailing zeros
-    .replace('.00', '')
-    .replace(/\.(\d)0/, m => m.replace('0', ''));
-};
+  const thousands = formatAsThousands(parseInt(num))
+  const decimals = num.toString().match(/\.(\d){2}/)[0]
+
+  return (
+    `${thousands}${decimals}`
+      // Removing trailing zeros
+      .replace('.00', '')
+      .replace(/\.(\d)0/, m => m.replace('0', ''))
+  )
+}
 
 /**
  * Format number with thousands separator.
@@ -23,10 +25,10 @@ const numberToMoney = num => {
  * @returns {string}
  */
 export const formatAsThousands = num => {
-  const formattedNum = reverseNum(num).replace(/(\d){3}/g, m => m + ',');
+  const formattedNum = reverseNum(num).replace(/(\d){3}/g, m => m + ',')
 
-  return reverseNum(formattedNum).replace(/^,/, '');
-};
+  return reverseNum(formattedNum).replace(/^,/, '')
+}
 
 /**
  * Reverse a given number.
@@ -39,7 +41,7 @@ const reverseNum = num => {
     .toString()
     .split('')
     .reverse()
-    .join('');
-};
+    .join('')
+}
 
-export default numberToMoney;
+export default numberToMoney

@@ -1,5 +1,5 @@
 const countChar = (str, char) => {
-  return (str.match(new RegExp(char, 'gi')) || []).length;
-};
+  return (str.match(new RegExp(char, 'gi')) || []).length
+}
 
-export default countChar;
+export default countChar

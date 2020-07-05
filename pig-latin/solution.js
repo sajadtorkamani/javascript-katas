@@ -3,25 +3,25 @@
  * @returns {string | null}
  */
 const pigLatin = str => {
-  str = str.toLowerCase();
+  str = str.toLowerCase()
 
   if (/[^a-z]/.test(str)) {
-    return null;
+    return null
   }
 
   if (/^[aeiou]/.test(str)) {
-    return str + 'way';
+    return str + 'way'
   }
 
-  const leadingConsonantsRegex = new RegExp('^[bcdfghjklmnpqrstvwxyz]+');
+  const leadingConsonantsRegex = new RegExp('^[bcdfghjklmnpqrstvwxyz]+')
 
   if (leadingConsonantsRegex.test(str)) {
     return (
       str.replace(leadingConsonantsRegex, '') +
       str.match(leadingConsonantsRegex) +
       'ay'
-    );
+    )
   }
-};
+}
 
-export default pigLatin;
+export default pigLatin

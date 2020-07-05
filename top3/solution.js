@@ -6,7 +6,7 @@ const top3 = (products, amounts, prices) => {
     }))
     .sort((a, b) => b.sale - a.sale)
     .slice(0, 3)
-    .map(product => product.name);
-};
+    .map(product => product.name)
+}
 
-export default top3;
+export default top3

@@ -4,22 +4,22 @@
  */
 const whatCentury = year => {
   let century =
-    year.slice(-2) === '00' ? year.slice(0, 2) : +year.slice(0, 2) + 1;
+    year.slice(-2) === '00' ? year.slice(0, 2) : +year.slice(0, 2) + 1
 
-  century = century.toString();
+  century = century.toString()
 
   switch (true) {
     case /11|12|13/.test(century):
-      return century + 'th';
+      return century + 'th'
     case century.endsWith('1'):
-      return century + 'st';
+      return century + 'st'
     case century.endsWith('2'):
-      return century + 'nd';
+      return century + 'nd'
     case century.endsWith('3'):
-      return century + 'rd';
+      return century + 'rd'
     default:
-      return century + 'th';
+      return century + 'th'
   }
-};
+}
 
-export default whatCentury;
+export default whatCentury

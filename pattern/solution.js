@@ -1,21 +1,21 @@
 const pattern = num => {
   if (num < 1) {
-    return '';
+    return ''
   }
 
   return new Array(num)
     .fill()
     .map((v, index) => {
-      let digits = [];
+      let digits = []
 
-      for (let digit = num; digit >= (num - index); digit--) {
-        digits.push(digit);
+      for (let digit = num; digit >= num - index; digit--) {
+        digits.push(digit)
       }
 
-      return digits.join('');
+      return digits.join('')
     })
     .reverse()
-    .join('\n');
-};
+    .join('\n')
+}
 
-export default pattern;
+export default pattern

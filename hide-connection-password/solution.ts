@@ -1,7 +1,7 @@
 const hidePasswordFromConnection = (str: string): string => {
   return str.replace(/(?<=password=)[^&]*/, password => {
-    return '*'.repeat(password.length);
-  });
-};
+    return '*'.repeat(password.length)
+  })
+}
 
-export default hidePasswordFromConnection;
+export default hidePasswordFromConnection

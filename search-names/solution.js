@@ -2,17 +2,17 @@
  * @param list {Array<string>}
  */
 const searchNames = list => {
-  let emails = [];
+  let emails = []
 
   list
     .filter(Boolean) // Just to pass + feeling lazy...
     .forEach((item, index) => {
       if (index % 2 === 0 && /^\.|\.$/.test(item)) {
-        emails.push(list[index + 1]);
+        emails.push(list[index + 1])
       }
-    });
+    })
 
-  return emails;
-};
+  return emails
+}
 
-export default searchNames;
+export default searchNames

@@ -1,4 +1,4 @@
-import isValidCoordinates from './solution';
+import isValidCoordinates from './solution'
 
 describe('isValidCoordinates', () => {
   test('correctly validates the given coordinates', () => {
@@ -8,11 +8,11 @@ describe('isValidCoordinates', () => {
       '24.53525235, 23.45235',
       '04, -23.234235',
       '43.91343345, 143'
-    ];
+    ]
 
     validCoordinates.forEach(coords => {
-      expect(isValidCoordinates(coords)).toBe(true);
-    });
+      expect(isValidCoordinates(coords)).toBe(true)
+    })
 
     const invalidCoordinates = [
       '23.234, - 23.4234',
@@ -23,10 +23,10 @@ describe('isValidCoordinates', () => {
       '0, 1,2',
       '0.342q0832, 1.2324',
       '23.245, 1e1'
-    ];
+    ]
 
     invalidCoordinates.forEach(coords => {
-      expect(isValidCoordinates(coords)).toBe(false);
-    });
-  });
-});
+      expect(isValidCoordinates(coords)).toBe(false)
+    })
+  })
+})

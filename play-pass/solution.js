@@ -8,19 +8,19 @@ const playPass = (str, offset) => {
     .split('')
     .map((char, index) => {
       if (/[A-Z]/.test(char)) {
-        const offsetLetter = handleLetterOffset(char, offset);
-        return handleLetterIndex(offsetLetter, index);
+        const offsetLetter = handleLetterOffset(char, offset)
+        return handleLetterIndex(offsetLetter, index)
       }
 
       if (/[0-9]/.test(char)) {
-        return handleDigit(+char);
+        return handleDigit(+char)
       }
 
-      return char;
+      return char
     })
     .reverse()
-    .join('');
-};
+    .join('')
+}
 
 /**
  *
@@ -29,13 +29,13 @@ const playPass = (str, offset) => {
  * @returns {string}
  */
 export const handleLetterOffset = (letter, offset) => {
-  const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-  const letterIndex = ALPHABET.indexOf(letter);
-  const offsetIndex = (letterIndex + offset) % 26;
+  const letterIndex = ALPHABET.indexOf(letter)
+  const offsetIndex = (letterIndex + offset) % 26
 
-  return ALPHABET.charAt(offsetIndex);
-};
+  return ALPHABET.charAt(offsetIndex)
+}
 
 /**
  * @param {string} letter
@@ -43,13 +43,13 @@ export const handleLetterOffset = (letter, offset) => {
  * @returns {string}
  */
 export const handleLetterIndex = (letter, index) => {
-  return index % 2 === 0 ? letter.toUpperCase() : letter.toLowerCase();
-};
+  return index % 2 === 0 ? letter.toUpperCase() : letter.toLowerCase()
+}
 
 /**
  * @param {number} digit
  * @return {number}
  */
-export const handleDigit = digit => 9 - digit;
+export const handleDigit = digit => 9 - digit
 
-export default playPass;
+export default playPass

@@ -1,4 +1,4 @@
-import sumTheTreeValues from './solution';
+import sumTheTreeValues from './solution'
 
 describe('sumTheTreeValues', () => {
   test('returns correct result', () => {
@@ -6,8 +6,8 @@ describe('sumTheTreeValues', () => {
       value: 10,
       left: { value: 1, left: null, right: null },
       right: { value: 2, left: null, right: null }
-    };
-    expect(sumTheTreeValues(simpleNode)).toEqual(13);
+    }
+    expect(sumTheTreeValues(simpleNode)).toEqual(13)
 
     const unbalancedNode = {
       value: 11,
@@ -17,7 +17,7 @@ describe('sumTheTreeValues', () => {
         left: null,
         right: { value: 1, left: null, right: null }
       }
-    };
-    expect(sumTheTreeValues(unbalancedNode)).toEqual(12);
-  });
-});
+    }
+    expect(sumTheTreeValues(unbalancedNode)).toEqual(12)
+  })
+})

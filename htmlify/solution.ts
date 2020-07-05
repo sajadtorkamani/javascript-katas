@@ -2,21 +2,21 @@ const htmlify = (input: string): string => {
   const encoded = input.replace(/[–’&“”]/g, symbol => {
     switch (symbol) {
       case '–':
-        return '&ndash;';
+        return '&ndash;'
       case '’':
-        return '&rsquo;';
+        return '&rsquo;'
       case '&':
-        return '&amp;';
+        return '&amp;'
       case '“':
-        return '&ldquo;';
+        return '&ldquo;'
       case '”':
-        return '&rdquo;';
+        return '&rdquo;'
       default:
-        return symbol;
+        return symbol
     }
-  });
+  })
 
-  return `<p>${encoded}</p>`;
-};
+  return `<p>${encoded}</p>`
+}
 
-export default htmlify;
+export default htmlify

@@ -3,7 +3,7 @@
  * @returns {string}
  */
 const findOutChristmasWeekday = date => {
-  const day = new Date(date).getDay();
+  const day = new Date(date).getDay()
 
   return [
     'Sunday',
@@ -13,7 +13,7 @@ const findOutChristmasWeekday = date => {
     'Thursday',
     'Friday',
     'Saturday'
-  ][day];
-};
+  ][day]
+}
 
-export default findOutChristmasWeekday;
+export default findOutChristmasWeekday

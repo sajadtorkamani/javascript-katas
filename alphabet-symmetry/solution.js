@@ -3,9 +3,9 @@ export const getCorrectPositionsCount = word => {
     .toLowerCase()
     .split('')
     .filter((letter, index) => letter === String.fromCharCode(97 + index))
-    .length;
-};
+    .length
+}
 
-const solve = words => words.map(getCorrectPositionsCount);
+const solve = words => words.map(getCorrectPositionsCount)
 
-export default solve;
+export default solve

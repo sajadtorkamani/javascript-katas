@@ -3,19 +3,19 @@
  */
 const generateHashtag = str => {
   if (!/\w/.test(str)) {
-    return false;
+    return false
   }
 
-  const hashtag = '#' + str
-    .match(/\b\w+\b/g)
-    .map(word => {
-      return word
-        .toLowerCase()
-        .replace(/^\w/, m => m.toUpperCase());
-    })
-    .join('');
+  const hashtag =
+    '#' +
+    str
+      .match(/\b\w+\b/g)
+      .map(word => {
+        return word.toLowerCase().replace(/^\w/, m => m.toUpperCase())
+      })
+      .join('')
 
-  return hashtag.length <= 140 ? hashtag : false;
-};
+  return hashtag.length <= 140 ? hashtag : false
+}
 
-export default generateHashtag;
+export default generateHashtag

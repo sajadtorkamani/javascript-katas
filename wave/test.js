@@ -1,4 +1,4 @@
-import wave, { replaceCharAt } from './solution';
+import wave, { replaceCharAt } from './solution'
 
 describe('wave', () => {
   test('returns correct result', () => {
@@ -11,18 +11,27 @@ describe('wave', () => {
     // result = [];
     // expect(wave('')).toEqual(result);
 
-    let result = ['Two words', 'tWo words', 'twO words', 'two Words', 'two wOrds', 'two woRds', 'two worDs', 'two wordS'];
-    expect(wave('two words')).toEqual(result);
+    let result = [
+      'Two words',
+      'tWo words',
+      'twO words',
+      'two Words',
+      'two wOrds',
+      'two woRds',
+      'two worDs',
+      'two wordS'
+    ]
+    expect(wave('two words')).toEqual(result)
     //
     // result = [' Gap ', ' gAp ', ' gaP '];
     // expect(wave(' gap ')).toEqual(result);
-  });
-});
+  })
+})
 
 describe('replaceCharAt', () => {
   test('replaces char at given index', () => {
-    expect(replaceCharAt('foo', 0, 'x')).toEqual('xoo');
-    expect(replaceCharAt('foo', 1, 'x')).toEqual('fxo');
-    expect(replaceCharAt('foo', 5, 'x')).toEqual('foo');
-  });
+    expect(replaceCharAt('foo', 0, 'x')).toEqual('xoo')
+    expect(replaceCharAt('foo', 1, 'x')).toEqual('fxo')
+    expect(replaceCharAt('foo', 5, 'x')).toEqual('foo')
+  })
 })

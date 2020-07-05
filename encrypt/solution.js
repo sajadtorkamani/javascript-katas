@@ -4,12 +4,12 @@
  */
 const encrypt = (text, rule) => {
   return text.replace(/./g, char => {
-    const charCode = char.charCodeAt(0) + rule;
+    const charCode = char.charCodeAt(0) + rule
 
     return charCode > 255
       ? String.fromCharCode(charCode % 256)
-      : String.fromCharCode(charCode);
-  });
-};
+      : String.fromCharCode(charCode)
+  })
+}
 
-export default encrypt;
+export default encrypt

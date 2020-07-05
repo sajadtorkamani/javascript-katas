@@ -1,28 +1,25 @@
 const fifa = (predictions, results) => {
-  let index = 0;
-  let totalWinnings = 0;
+  let index = 0
+  let totalWinnings = 0
 
   results = results.map(result => {
-    const [home, away] = result.split('-');
+    const [home, away] = result.split('-')
 
-    return home === away
-      ? 'Draw'
-      : home > away ? 'Home' : 'Away';
-  });
-
+    return home === away ? 'Draw' : home > away ? 'Home' : 'Away'
+  })
 
   for (let prediction in predictions) {
-    const hasCorrectPrediction = prediction === results[index];
+    const hasCorrectPrediction = prediction === results[index]
 
     if (hasCorrectPrediction) {
-      const winning = predictions[prediction];
-      totalWinnings += +winning.replace('£', '');
+      const winning = predictions[prediction]
+      totalWinnings += +winning.replace('£', '')
     }
 
-    index++;
+    index++
   }
 
-  return `£${totalWinnings}`;
-};
+  return `£${totalWinnings}`
+}
 
-export default fifa;
+export default fifa

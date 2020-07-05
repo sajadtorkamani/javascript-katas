@@ -8,9 +8,9 @@ const encryptThis = text => {
       return word
         .replace(/(?<=\w)\w/, word.slice(-1))
         .replace(/(?<=\w+)\w$/, word[1])
-        .replace(/^\w/, m => m.charCodeAt(0));
+        .replace(/^\w/, m => m.charCodeAt(0))
     })
-    .join(' ');
-};
+    .join(' ')
+}
 
-export default encryptThis;
+export default encryptThis

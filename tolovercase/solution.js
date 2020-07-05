@@ -1,12 +1,11 @@
-String.prototype.toLoverCase = function () {
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+String.prototype.toLoverCase = function() {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
-  return this
-    .split('')
+  return this.split('')
     .map(letter => {
       return /\w/.test(letter)
         ? 'LOVE'[alphabet.indexOf(letter.toLowerCase()) % 4]
-        : letter;
+        : letter
     })
-    .join('');
-};
+    .join('')
+}

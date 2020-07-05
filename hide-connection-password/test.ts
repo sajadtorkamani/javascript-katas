@@ -1,4 +1,4 @@
-import hidePasswordFromConnection from './solution';
+import hidePasswordFromConnection from './solution'
 
 describe('hidePasswordFromConnection', () => {
   test('returns correct result', () => {
@@ -8,7 +8,7 @@ describe('hidePasswordFromConnection', () => {
       )
     ).toEqual(
       'jdbc:mysql://sdasdasdasd:szdasdasd:dfsdfsdfsdf/sdfsdfsdf?user=root&password=*****'
-    );
+    )
 
     expect(
       hidePasswordFromConnection(
@@ -16,6 +16,6 @@ describe('hidePasswordFromConnection', () => {
       )
     ).toEqual(
       'jdbc:mysql://sdasdasdasd:szdasdasd:dfsdfsdfsdf/sdfsdfsdf?password=*****&user=root'
-    );
-  });
-});
+    )
+  })
+})

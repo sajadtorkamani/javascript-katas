@@ -1,12 +1,12 @@
 const roundedOdd = x => {
   if (isNaN(x) || typeof x === 'boolean') {
-    return false;
+    return false
   }
 
-  x = Math.abs(x);
-  x = Math.floor(x);
+  x = Math.abs(x)
+  x = Math.floor(x)
 
-  return x % 2 === 1;
-};
+  return x % 2 === 1
+}
 
-export default roundedOdd;
+export default roundedOdd

@@ -1,4 +1,4 @@
-import { mean, variance } from './solution';
+import { mean, variance } from './solution'
 
 const data =
   'Rome:Jan 81.2,Feb 63.2,Mar 70.3,Apr 55.7,May 53.0,Jun 36.4,Jul 17.5,Aug 27.5,Sep 60.9,Oct 117.7,Nov 111.0,Dec 97.9' +
@@ -19,7 +19,7 @@ const data =
   '\n' +
   'Beijing:Jan 3.9,Feb 4.7,Mar 8.2,Apr 18.4,May 33.0,Jun 78.1,Jul 224.3,Aug 170.0,Sep 58.4,Oct 18.0,Nov 9.3,Dec 2.7' +
   '\n' +
-  'Lima:Jan 1.2,Feb 0.9,Mar 0.7,Apr 0.4,May 0.6,Jun 1.8,Jul 4.4,Aug 3.1,Sep 3.3,Oct 1.7,Nov 0.5,Dec 0.7';
+  'Lima:Jan 1.2,Feb 0.9,Mar 0.7,Apr 0.4,May 0.6,Jun 1.8,Jul 4.4,Aug 3.1,Sep 3.3,Oct 1.7,Nov 0.5,Dec 0.7'
 
 const data1 =
   'Rome:Jan 90.2,Feb 73.2,Mar 80.3,Apr 55.7,May 53.0,Jun 36.4,Jul 17.5,Aug 27.5,Sep 60.9,Oct 147.7,Nov 121.0,Dec 97.9' +
@@ -40,19 +40,19 @@ const data1 =
   '\n' +
   'Beijing:Jan 13.9,Feb 14.7,Mar 18.2,Apr 18.4,May 43.0,Jun 88.1,Jul 224.3,Aug 170.0,Sep 58.4,Oct 38.0,Nov 19.3,Dec 2.7' +
   '\n' +
-  'Lima:Jan 11.2,Feb 10.9,Mar 10.7,Apr 10.4,May 10.6,Jun 11.8,Jul 14.4,Aug 13.1,Sep 23.3,Oct 1.7,Nov 0.5,Dec 10.7';
+  'Lima:Jan 11.2,Feb 10.9,Mar 10.7,Apr 10.4,May 10.6,Jun 11.8,Jul 14.4,Aug 13.1,Sep 23.3,Oct 1.7,Nov 0.5,Dec 10.7'
 
 describe('mean', () => {
   test('returns correct result', () => {
-    expect(mean('London', data)).toEqual(51.199999999999996);
-    expect(mean('Beijing', data)).toEqual(52.416666666666664);
-    expect(mean('The Shire', data)).toEqual(-1);
-  });
-});
+    expect(mean('London', data)).toEqual(51.199999999999996)
+    expect(mean('Beijing', data)).toEqual(52.416666666666664)
+    expect(mean('The Shire', data)).toEqual(-1)
+  })
+})
 
 describe('variance', () => {
   test('returns correct result', () => {
-    expect(variance('Beijing', data)).toEqual(4808.37138888889);
-    expect(variance('Mordor', data)).toEqual(-1);
-  });
-});
+    expect(variance('Beijing', data)).toEqual(4808.37138888889)
+    expect(variance('Mordor', data)).toEqual(-1)
+  })
+})

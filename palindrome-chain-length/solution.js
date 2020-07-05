@@ -4,29 +4,29 @@
  */
 const palindromeChainLength = num => {
   if (isPalindrome(num)) {
-    return 0;
+    return 0
   }
 
-  let numSteps = 0;
-  let sum = num;
+  let numSteps = 0
+  let sum = num
 
   while (true) {
-    sum = sum + getReversedNum(sum);
-    numSteps += 1;
+    sum = sum + getReversedNum(sum)
+    numSteps += 1
 
     if (isPalindrome(sum)) {
-      return numSteps;
+      return numSteps
     }
   }
-};
+}
 
 /**
  * @param {number} num
  * @return {boolean}
  */
 export const isPalindrome = num => {
-  return getReversedNum(num) === num;
-};
+  return getReversedNum(num) === num
+}
 
 /**
  * @param {number} num
@@ -37,7 +37,7 @@ export const getReversedNum = num => {
     .toString()
     .split('')
     .reverse()
-    .join('');
-};
+    .join('')
+}
 
-export default palindromeChainLength;
+export default palindromeChainLength

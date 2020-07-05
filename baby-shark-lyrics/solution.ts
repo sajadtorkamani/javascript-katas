@@ -10,11 +10,11 @@ const babySharkLyrics = (): string => {
     ]
       .map(printChorus)
       .join('') + 'Run away,…'
-  );
-};
+  )
+}
 
 export const printChorus = (sentence: string): string => {
-  return `${sentence}, doo doo doo doo doo doo\n`.repeat(3) + `${sentence}!\n`;
-};
+  return `${sentence}, doo doo doo doo doo doo\n`.repeat(3) + `${sentence}!\n`
+}
 
-export default babySharkLyrics;
+export default babySharkLyrics

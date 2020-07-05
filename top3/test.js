@@ -1,4 +1,4 @@
-import top3 from './solution';
+import top3 from './solution'
 
 describe('top3', () => {
   test('returns correct result', () => {
@@ -8,7 +8,7 @@ describe('top3', () => {
         [3, 24, 8],
         [199, 299, 399]
       )
-    ).toEqual(['Cell Phones', 'Vacuum Cleaner', 'Computer']);
+    ).toEqual(['Cell Phones', 'Vacuum Cleaner', 'Computer'])
 
     expect(
       top3(
@@ -25,7 +25,7 @@ describe('top3', () => {
         [5, 25, 2, 7, 10, 3, 2, 24],
         [51, 225, 22, 47, 510, 83, 82, 124]
       )
-    ).toEqual(['Vacuum Cleaner', 'Gold', ' Speakers']);
+    ).toEqual(['Vacuum Cleaner', 'Gold', ' Speakers'])
 
     expect(
       top3(
@@ -42,6 +42,6 @@ describe('top3', () => {
         [0, 12, 24, 17, 19, 23, 120, 8],
         [9, 24, 29, 31, 51, 8, 120, 14]
       )
-    ).toEqual(['Lego', 'Gold', 'Computer']);
-  });
-});
+    ).toEqual(['Lego', 'Gold', 'Computer'])
+  })
+})

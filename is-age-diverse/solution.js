@@ -16,48 +16,48 @@ const isAgeDiverse = list => {
     eighties: false,
     nineties: false,
     hundreds: false
-  };
+  }
 
   list.forEach(dev => {
-    const age = dev.age;
+    const age = dev.age
 
     switch (true) {
       case age >= 100:
-        ageGroups.hundreds = true;
-        break;
+        ageGroups.hundreds = true
+        break
       case age >= 90:
-        ageGroups.nineties = true;
-        break;
+        ageGroups.nineties = true
+        break
       case age >= 80:
-        ageGroups.eighties = true;
-        break;
+        ageGroups.eighties = true
+        break
       case age >= 70:
-        ageGroups.seventies = true;
-        break;
+        ageGroups.seventies = true
+        break
       case age >= 60:
-        ageGroups.sixties = true;
-        break;
+        ageGroups.sixties = true
+        break
       case age >= 50:
-        ageGroups.fifties = true;
-        break;
+        ageGroups.fifties = true
+        break
       case age >= 40:
-        ageGroups.fourties = true;
-        break;
+        ageGroups.fourties = true
+        break
       case age >= 30:
-        ageGroups.thirties = true;
-        break;
+        ageGroups.thirties = true
+        break
       case age >= 20:
-        ageGroups.twenties = true;
-        break;
+        ageGroups.twenties = true
+        break
       case age >= 13:
-        ageGroups.teens = true;
-        break;
+        ageGroups.teens = true
+        break
       default:
-        break;
+        break
     }
-  });
+  })
 
-  return Object.values(ageGroups).every(ageGroup => ageGroup === true);
-};
+  return Object.values(ageGroups).every(ageGroup => ageGroup === true)
+}
 
-export default isAgeDiverse;
+export default isAgeDiverse

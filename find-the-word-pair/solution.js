@@ -4,40 +4,40 @@
  * @returns {Array|null}
  */
 const compoundMatch = (words, target) => {
-  let _checkedWords = [];
+  let _checkedWords = []
 
   for (let i = 0; i < words.length; i++) {
-    const word = words[i];
+    const word = words[i]
 
     if (_checkedWords.includes(word)) {
-      continue;
+      continue
     }
-    _checkedWords.push(word);
+    _checkedWords.push(word)
 
     if (!target.includes(word)) {
-      continue;
+      continue
     }
 
-    const adjacentWords = words.slice(i + 1);
+    const adjacentWords = words.slice(i + 1)
 
     for (let j = 0; j < adjacentWords.length; j++) {
-      const adjacentWord = adjacentWords[j];
+      const adjacentWord = adjacentWords[j]
 
       if (!target.includes(adjacentWord)) {
-        continue;
+        continue
       }
 
       if (word + adjacentWord === target) {
-        return [word, adjacentWord, [i, words.indexOf(adjacentWord)]];
+        return [word, adjacentWord, [i, words.indexOf(adjacentWord)]]
       }
 
       if (adjacentWord + word === target) {
-        return [word, adjacentWord, [words.indexOf(adjacentWord), i]];
+        return [word, adjacentWord, [words.indexOf(adjacentWord), i]]
       }
     }
   }
 
-  return null;
-};
+  return null
+}
 
-export default compoundMatch;
+export default compoundMatch

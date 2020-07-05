@@ -6,7 +6,7 @@ const getHashtags = str => {
   return str
     .split(' ')
     .filter(word => /^#+\w+$/.test(word))
-    .map(word => word.replace(/#/g, ''));
-};
+    .map(word => word.replace(/#/g, ''))
+}
 
-export default getHashtags;
+export default getHashtags

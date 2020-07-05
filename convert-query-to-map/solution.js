@@ -1,19 +1,19 @@
-import _setWith from 'lodash/setWith';
+import _setWith from 'lodash/setWith'
 
 const convertQueryToMap = query => {
-  let obj = {};
+  let obj = {}
 
   if (query === '') {
-    return obj;
+    return obj
   }
 
   query.split('&').forEach(part => {
-    const [param, value] = part.split('=');
+    const [param, value] = part.split('=')
 
-    _setWith(obj, param, decodeURIComponent(value), Object);
-  });
+    _setWith(obj, param, decodeURIComponent(value), Object)
+  })
 
-  return obj;
-};
+  return obj
+}
 
-export default convertQueryToMap;
+export default convertQueryToMap

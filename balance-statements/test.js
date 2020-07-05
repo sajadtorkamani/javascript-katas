@@ -1,4 +1,4 @@
-import balanceStatements from './solution';
+import balanceStatements from './solution'
 
 describe('balanceStatements', () => {
   test('returns correct result', () => {
@@ -20,6 +20,6 @@ describe('balanceStatements', () => {
       )
     ).toEqual(
       'Buy: 260 Sell: 11602; Badly formed 2: CLH16.NYM 50 56 S ;OWW 1000 11 S ;'
-    );
-  });
-});
+    )
+  })
+})

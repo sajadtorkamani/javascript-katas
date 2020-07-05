@@ -5,18 +5,18 @@
  */
 const stockList = (stock, categories) => {
   if (!stock.length || !categories.length) {
-    return '';
+    return ''
   }
 
   return categories
     .map(categoryCode => {
       const quantity = stock
         .filter(itemCode => itemCode.startsWith(categoryCode))
-        .reduce((total, item) => total + +item.match(/\d+/)[0], 0);
+        .reduce((total, item) => total + +item.match(/\d+/)[0], 0)
 
-      return `(${categoryCode} : ${quantity})`;
+      return `(${categoryCode} : ${quantity})`
     })
-    .join(' - ');
-};
+    .join(' - ')
+}
 
-export default stockList;
+export default stockList

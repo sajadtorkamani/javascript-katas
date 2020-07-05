@@ -8,15 +8,15 @@ A binary complement of a sequence X is a sequence Y of the same length such that
 
 Thus the first few iterations to obtain Thue-Morse sequence are:
 
-````
+```
 0
 0 1
 0 1 1 0
 0 1 1 0 1 0 0 1
-````
+```
 
 #### Examples
+
 For `seq=[0, 1, 1, 0, 1]`, the result should be `true`.
 
 For `seq=[0, 1, 0, 0]`, the result should be `false`.
-

@@ -1,17 +1,17 @@
 const getQuote = (quotes, hero) => {
-  const quoteIndex = +hero.match(/\d/)[0];
-  const quote = quotes[quoteIndex];
+  const quoteIndex = +hero.match(/\d/)[0]
+  const quote = quotes[quoteIndex]
 
   switch (hero[0]) {
     case 'B':
-      return `Batman: ${quote}`;
+      return `Batman: ${quote}`
     case 'R':
-      return `Robin: ${quote}`;
+      return `Robin: ${quote}`
     case 'J':
-      return `Joker: ${quote}`;
+      return `Joker: ${quote}`
     default:
-      break;
+      break
   }
-};
+}
 
-export default getQuote;
+export default getQuote

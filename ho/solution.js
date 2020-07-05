@@ -1,5 +1,5 @@
 const ho = fn => {
-  return fn ? 'Ho' + ' ' + fn : 'Ho!';
-};
+  return fn ? 'Ho' + ' ' + fn : 'Ho!'
+}
 
-export default ho;
+export default ho

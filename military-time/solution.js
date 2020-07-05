@@ -7,14 +7,14 @@ const getMilitaryTime = input => {
     .replace(/^\d{2}/, hour => {
       switch (true) {
         case /^12.+AM$/.test(input):
-          return '00';
+          return '00'
         case hour !== '12' && /PM/.test(input):
-          return +hour + 12;
+          return +hour + 12
         default:
-          return hour;
+          return hour
       }
     })
-    .replace(/AM|PM/, '');
-};
+    .replace(/AM|PM/, '')
+}
 
-export default getMilitaryTime;
+export default getMilitaryTime

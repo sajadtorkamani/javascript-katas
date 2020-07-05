@@ -1,5 +1,5 @@
 const swap = str => {
-  return str.replace(/[aeiou]/g, m => m.toUpperCase());
-};
+  return str.replace(/[aeiou]/g, m => m.toUpperCase())
+}
 
-export default swap;
+export default swap

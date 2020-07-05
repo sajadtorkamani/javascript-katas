@@ -1,7 +1,7 @@
 const add = n => {
-  return function (x) {
-    return n + x;
-  };
-};
+  return function(x) {
+    return n + x
+  }
+}
 
-export default add;
+export default add

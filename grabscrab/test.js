@@ -1,4 +1,4 @@
-import grabscrab from './solution';
+import grabscrab from './solution'
 
 describe('grabscrab', () => {
   // prettier-ignore
@@ -10,4 +10,4 @@ describe('grabscrab', () => {
     expect(grabscrab('ortsp', ['sport', 'parrot', 'ports', 'matey'])).toEqual([ 'sport', 'ports' ]);
     expect(grabscrab('ourf', ['one', 'two', 'three'])).toEqual([]); 
   });
-});
+})

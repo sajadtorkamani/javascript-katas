@@ -4,12 +4,12 @@
  */
 const runLengthEncoding = str => {
   if (str.length === 0) {
-    return [];
+    return []
   }
 
   return str.match(/(.)(\1)*/g).map(run => {
-    return [run.length, run[0]];
-  });
-};
+    return [run.length, run[0]]
+  })
+}
 
-export default runLengthEncoding;
+export default runLengthEncoding

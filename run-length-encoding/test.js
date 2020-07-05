@@ -1,10 +1,10 @@
-import runLengthEncoding from './solution';
+import runLengthEncoding from './solution'
 
 describe('runLengthEncoding', () => {
   test('returns correct result', () => {
-    expect(runLengthEncoding('')).toEqual([]);
-    expect(runLengthEncoding('abc')).toEqual([[1, 'a'], [1, 'b'], [1, 'c']]);
-    expect(runLengthEncoding('aab')).toEqual([[2, 'a'], [1, 'b']]);
+    expect(runLengthEncoding('')).toEqual([])
+    expect(runLengthEncoding('abc')).toEqual([[1, 'a'], [1, 'b'], [1, 'c']])
+    expect(runLengthEncoding('aab')).toEqual([[2, 'a'], [1, 'b']])
     expect(runLengthEncoding('hello world!')).toEqual([
       [1, 'h'],
       [1, 'e'],
@@ -17,11 +17,11 @@ describe('runLengthEncoding', () => {
       [1, 'l'],
       [1, 'd'],
       [1, '!']
-    ]);
+    ])
     expect(runLengthEncoding('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbb')).toEqual([
       [34, 'a'],
       [3, 'b']
-    ]);
+    ])
     expect(
       runLengthEncoding(
         'WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW'
@@ -34,6 +34,6 @@ describe('runLengthEncoding', () => {
       [24, 'W'],
       [1, 'B'],
       [14, 'W']
-    ]);
-  });
-});
+    ])
+  })
+})

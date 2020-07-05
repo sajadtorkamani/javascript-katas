@@ -1,7 +1,7 @@
 const wordSearch = (word, text) => {
-  const wordRegex = new RegExp(`\\b${word}\\b`);
+  const wordRegex = new RegExp(`\\b${word}\\b`)
 
-  return wordRegex.test(text);
-};
+  return wordRegex.test(text)
+}
 
-export default wordSearch;
+export default wordSearch

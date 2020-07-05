@@ -5,8 +5,8 @@ const toWeirdCase = str => {
   return str
     .split(' ')
     .map(toWeirdCaseWord)
-    .join(' ');
-};
+    .join(' ')
+}
 
 /**
  * @param word {string}
@@ -15,11 +15,9 @@ export const toWeirdCaseWord = word => {
   return word
     .split('')
     .map((letter, index) => {
-      return index % 2 === 0
-        ? letter.toUpperCase()
-        : letter.toLowerCase();
+      return index % 2 === 0 ? letter.toUpperCase() : letter.toLowerCase()
     })
-    .join('');
-};
+    .join('')
+}
 
-export default toWeirdCase;
+export default toWeirdCase

@@ -4,17 +4,17 @@
  */
 const binaryToString = binary => {
   if (binary.length === 0) {
-    return '';
+    return ''
   }
 
   return binary
     .match(/\d{8}/g)
     .map(byte => {
-      const charCode = parseInt(byte, 2);
+      const charCode = parseInt(byte, 2)
 
-      return String.fromCharCode(charCode);
+      return String.fromCharCode(charCode)
     })
-    .join('');
-};
+    .join('')
+}
 
-export default binaryToString;
+export default binaryToString

@@ -1,4 +1,4 @@
-import longestPossible, { getSeconds } from './solution';
+import longestPossible, { getSeconds } from './solution'
 
 describe('longestPossible', () => {
   const songs = [
@@ -15,20 +15,20 @@ describe('longestPossible', () => {
       title: 'Surfing With The Alien',
       playback: '04:34'
     }
-  ];
+  ]
 
   test('returns title of longest song that is below the maximum length', () => {
-    expect(longestPossible(songs, 215)).toEqual('For Reasons Unknown');
-  });
+    expect(longestPossible(songs, 215)).toEqual('For Reasons Unknown')
+  })
 
   test('returns false if no song is found that is below the minimum length', () => {
-    expect(longestPossible(songs, 5)).toEqual(false);
-  });
-});
+    expect(longestPossible(songs, 5)).toEqual(false)
+  })
+})
 
 describe('getSeconds', () => {
   test('returns seconds from time format', () => {
-    expect(getSeconds('03:00')).toEqual(180);
-    expect(getSeconds('02:30')).toEqual(150);
-  });
-});
+    expect(getSeconds('03:00')).toEqual(180)
+    expect(getSeconds('02:30')).toEqual(150)
+  })
+})

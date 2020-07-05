@@ -1,10 +1,10 @@
 export const infected = (startMap: string): number => {
-  const INFECTED = '1';
-  const OCEAN = 'X';
+  const INFECTED = '1'
+  const OCEAN = 'X'
 
-  const totalPopulation = startMap.replace(new RegExp(OCEAN, 'g'), '').length;
+  const totalPopulation = startMap.replace(new RegExp(OCEAN, 'g'), '').length
   if (totalPopulation === 0) {
-    return 0;
+    return 0
   }
 
   const endMap = startMap
@@ -14,9 +14,9 @@ export const infected = (startMap: string): number => {
         ? INFECTED.repeat(continent.length)
         : continent
     )
-    .join(OCEAN);
+    .join(OCEAN)
 
-  const totalInfected = (endMap.match(new RegExp(INFECTED, 'g')) || []).length;
+  const totalInfected = (endMap.match(new RegExp(INFECTED, 'g')) || []).length
 
-  return (totalInfected / totalPopulation) * 100;
-};
+  return (totalInfected / totalPopulation) * 100
+}

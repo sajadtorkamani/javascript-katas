@@ -2,9 +2,7 @@
  * @param url {string}
  */
 const domainName = url => {
-  return url
-    .replace(/https?:\/\/|www\./g, '')
-    .split('.')[0];
-};
+  return url.replace(/https?:\/\/|www\./g, '').split('.')[0]
+}
 
-export default domainName;
+export default domainName

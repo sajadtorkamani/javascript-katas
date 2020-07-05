@@ -3,7 +3,7 @@
  * @return {number|NaN}
  */
 const myParseInt = str => {
-  return /^\d+$/.test(str.trim()) ? +str : 'isNaN';
-};
+  return /^\d+$/.test(str.trim()) ? +str : 'isNaN'
+}
 
-export default myParseInt;
+export default myParseInt

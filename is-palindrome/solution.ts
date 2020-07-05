@@ -3,9 +3,9 @@ const isPalindrome = (str: string): boolean => {
     .split('')
     .reverse()
     .join('')
-    .toLowerCase();
+    .toLowerCase()
 
-  return reversedStr === str.toLowerCase();
-};
+  return reversedStr === str.toLowerCase()
+}
 
-export default isPalindrome;
+export default isPalindrome

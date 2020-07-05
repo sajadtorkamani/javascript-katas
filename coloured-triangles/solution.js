@@ -1,20 +1,20 @@
 export const triangle = row => {
-  let result = row.split('');
+  let result = row.split('')
 
   while (result.length > 1) {
-    let iterationResult = [];
+    let iterationResult = []
 
     for (let i = 0; i < result.length - 1; i++) {
-      const colour = getColour(`${result[i]}${result[i + 1]}`);
+      const colour = getColour(`${result[i]}${result[i + 1]}`)
 
-      iterationResult.push(colour);
+      iterationResult.push(colour)
     }
 
-    result = iterationResult;
+    result = iterationResult
   }
 
-  return result[0];
-};
+  return result[0]
+}
 
 /**
  * Return colour based on input.
@@ -24,16 +24,16 @@ export const triangle = row => {
  */
 export const getColour = colours => {
   if (colours.match(/RR|GB|BG/)) {
-    return 'R';
+    return 'R'
   }
 
   if (colours.match(/GG|RB|BR/)) {
-    return 'G';
+    return 'G'
   }
 
   if (colours.match(/BB|RG|GR/)) {
-    return 'B';
+    return 'B'
   }
 
-  throw new Error(`Invalid argument: ${colours}`);
-};
+  throw new Error(`Invalid argument: ${colours}`)
+}

@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 const validate = str => {
-  return /^[A-Za-z]\w*@[\w-]+\.[\w.]+$/.test(str);
-};
+  return /^[A-Za-z]\w*@[\w-]+\.[\w.]+$/.test(str)
+}
 
-export default validate;
+export default validate

@@ -1,9 +1,34 @@
 // Simulate global from codewars kata.
 var fruitsName = [
-  'apple', 'pear', 'banana', 'watermelon', 'grape', 'plum', 'blueberry', 'persimmon', 'pomegranate', 'pineapple',
-  'orange', 'mangosteen', 'durian', 'lemon', 'pitaya', 'carambola', 'tomato', 'apricot', 'cherry', 'coconut',
-  'peach', 'fig', 'litchi', 'ginkgo', 'cantaloupe', 'hawthorn', 'mango', 'jujube'
-];
+  'apple',
+  'pear',
+  'banana',
+  'watermelon',
+  'grape',
+  'plum',
+  'blueberry',
+  'persimmon',
+  'pomegranate',
+  'pineapple',
+  'orange',
+  'mangosteen',
+  'durian',
+  'lemon',
+  'pitaya',
+  'carambola',
+  'tomato',
+  'apricot',
+  'cherry',
+  'coconut',
+  'peach',
+  'fig',
+  'litchi',
+  'ginkgo',
+  'cantaloupe',
+  'hawthorn',
+  'mango',
+  'jujube'
+]
 
 /**
  * Split fruit into two.
@@ -12,13 +37,10 @@ var fruitsName = [
  * @returns {Array}
  */
 export const splitFruit = word => {
-  const halfIndex = Math.ceil(word.length / 2);
+  const halfIndex = Math.ceil(word.length / 2)
 
-  return [
-    word.slice(0, halfIndex),
-    word.slice(halfIndex)
-  ];
-};
+  return [word.slice(0, halfIndex), word.slice(halfIndex)]
+}
 
 /**
  * Cut fruits.
@@ -29,7 +51,7 @@ export const splitFruit = word => {
 export const cutFruits = fruits => {
   return fruits
     .map(fruit => {
-      return fruitsName.includes(fruit) ? splitFruit(fruit) : [fruit];
+      return fruitsName.includes(fruit) ? splitFruit(fruit) : [fruit]
     })
-    .reduce((a, b) => a.concat(b));
-};
+    .reduce((a, b) => a.concat(b))
+}

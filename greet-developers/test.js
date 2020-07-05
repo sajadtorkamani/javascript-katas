@@ -1,4 +1,4 @@
-import greetDevelopers from './solution';
+import greetDevelopers from './solution'
 
 describe('greetDevelopers', () => {
   test('returns correct result', () => {
@@ -27,7 +27,7 @@ describe('greetDevelopers', () => {
         age: 32,
         language: 'Ruby'
       }
-    ];
+    ]
 
     const expectedOutput = [
       {
@@ -57,9 +57,8 @@ describe('greetDevelopers', () => {
         language: 'Ruby',
         greeting: 'Hi Madison, what do you like the most about Ruby?'
       }
-    ];
+    ]
 
-
-    expect(greetDevelopers(input)).toEqual(expectedOutput);
-  });
-});
+    expect(greetDevelopers(input)).toEqual(expectedOutput)
+  })
+})

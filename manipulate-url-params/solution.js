@@ -1,4 +1,4 @@
-const qs = require('querystring');
+const qs = require('querystring')
 
 /**
  * @param url {string}
@@ -8,17 +8,16 @@ const qs = require('querystring');
  */
 const addOrChangeUrlParameter = (url, param) => {
   if (!param) {
-    return url;
+    return url
   }
 
-  const [domain, queryString] = url.split(/\?=?/);
-  let params = qs.decode(queryString);
+  const [domain, queryString] = url.split(/\?=?/)
+  let params = qs.decode(queryString)
 
-  const [paramKey, paramValue] = param.split('=');
-  params[paramKey] = paramValue;
+  const [paramKey, paramValue] = param.split('=')
+  params[paramKey] = paramValue
 
-  return `${domain}?${qs.stringify(params)}`;
-};
+  return `${domain}?${qs.stringify(params)}`
+}
 
-
-export default addOrChangeUrlParameter;
+export default addOrChangeUrlParameter

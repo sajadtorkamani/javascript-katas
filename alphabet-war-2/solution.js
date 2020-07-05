@@ -3,9 +3,9 @@
  * @returns {string}
  */
 const alphabetWar = str => {
-  str = str.replace(/\w?\*\w?/g, '');
-  let leftSidePoints = 0;
-  let rightSidePoints = 0;
+  str = str.replace(/\w?\*\w?/g, '')
+  let leftSidePoints = 0
+  let rightSidePoints = 0
 
   str.split('').forEach(letter => {
     // prettier-ignore
@@ -20,15 +20,15 @@ const alphabetWar = str => {
       case 'd': rightSidePoints += 2; break;
       case 'z': rightSidePoints += 1; break;
     }
-  });
+  })
 
   if (rightSidePoints === leftSidePoints) {
-    return "Let's fight again!";
+    return "Let's fight again!"
   }
 
   return rightSidePoints > leftSidePoints
     ? 'Right side wins!'
-    : 'Left side wins!';
-};
+    : 'Left side wins!'
+}
 
-export default alphabetWar;
+export default alphabetWar

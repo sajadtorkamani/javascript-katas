@@ -1,4 +1,4 @@
-import { highestAge } from './solution';
+import { highestAge } from './solution'
 
 describe('highestAge', () => {
   test('returns correct result', () => {
@@ -11,7 +11,7 @@ describe('highestAge', () => {
         ],
         [{ name: 'john', age: 1 }, { name: 'alice', age: 77 }]
       )
-    ).toEqual('alice');
+    ).toEqual('alice')
     expect(
       highestAge(
         [
@@ -21,7 +21,7 @@ describe('highestAge', () => {
         ],
         [{ name: 'john', age: 1 }, { name: 'alice', age: 76 }]
       )
-    ).toEqual('kay');
+    ).toEqual('kay')
     expect(
       highestAge(
         [
@@ -31,6 +31,6 @@ describe('highestAge', () => {
         ],
         [{ name: 'john', age: 1 }, { name: 'alice', age: 76 }]
       )
-    ).toEqual('john');
-  });
-});
+    ).toEqual('john')
+  })
+})

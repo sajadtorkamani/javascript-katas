@@ -1,5 +1,5 @@
 function Vector(points) {
-  this.points = points;
+  this.points = points
 }
 
 /**
@@ -8,12 +8,14 @@ function Vector(points) {
  * @param otherVector {Vector}
  * @return {Vector}
  */
-Vector.prototype.add = function (otherVector) {
-  this._assertSameLength(otherVector);
-  const points = this.points.map((point, index) => point + otherVector.points[index]);
+Vector.prototype.add = function(otherVector) {
+  this._assertSameLength(otherVector)
+  const points = this.points.map(
+    (point, index) => point + otherVector.points[index]
+  )
 
-  return new Vector(points);
-};
+  return new Vector(points)
+}
 
 /**
  * Create a new vector by subtracting the passed in vector from the current vector.
@@ -21,12 +23,14 @@ Vector.prototype.add = function (otherVector) {
  * @param otherVector {Vector}
  * @return {Vector}
  */
-Vector.prototype.subtract = function (otherVector) {
-  this._assertSameLength(otherVector);
-  const points = this.points.map((point, index) => point - otherVector.points[index]);
+Vector.prototype.subtract = function(otherVector) {
+  this._assertSameLength(otherVector)
+  const points = this.points.map(
+    (point, index) => point - otherVector.points[index]
+  )
 
-  return new Vector(points);
-};
+  return new Vector(points)
+}
 
 /**
  * Return the total sum of all the points multiplied by each another.
@@ -34,22 +38,22 @@ Vector.prototype.subtract = function (otherVector) {
  * @param otherVector {Vector}
  * @return {number}
  */
-Vector.prototype.dot = function (otherVector) {
-  this._assertSameLength(otherVector);
+Vector.prototype.dot = function(otherVector) {
+  this._assertSameLength(otherVector)
 
   return this.points
     .map((point, index) => point * otherVector.points[index])
-    .reduce((a, b) => a + b);
-};
+    .reduce((a, b) => a + b)
+}
 
 /**
  * @return {number}
  */
-Vector.prototype.norm = function () {
-  const sum = this.points.reduce((a, b) => a + Math.pow(b, 2), 0);
+Vector.prototype.norm = function() {
+  const sum = this.points.reduce((a, b) => a + Math.pow(b, 2), 0)
 
-  return Math.sqrt(sum);
-};
+  return Math.sqrt(sum)
+}
 
 /**
  * Check if two vectors are equal.
@@ -58,21 +62,23 @@ Vector.prototype.norm = function () {
  *
  * @return {boolean}
  */
-Vector.prototype.equals = function (otherVector) {
-  return this.points.length === otherVector.points.length
-    && this.points.every((point, index) => {
-      return point === otherVector.points[index];
-    });
-};
+Vector.prototype.equals = function(otherVector) {
+  return (
+    this.points.length === otherVector.points.length &&
+    this.points.every((point, index) => {
+      return point === otherVector.points[index]
+    })
+  )
+}
 
 /**
  * Return string representation of object.
  *
  * @return {string}
  */
-Vector.prototype.toString = function () {
-  return '(' + this.points.toString() + ')';
-};
+Vector.prototype.toString = function() {
+  return '(' + this.points.toString() + ')'
+}
 
 /**
  * Assert that two vectors have the same length.
@@ -80,10 +86,10 @@ Vector.prototype.toString = function () {
  * @param otherVector {Vector}
  * @private
  */
-Vector.prototype._assertSameLength = function (otherVector) {
+Vector.prototype._assertSameLength = function(otherVector) {
   if (this.points.length !== otherVector.points.length) {
-    throw new Error('Vectors must be of the same length.');
+    throw new Error('Vectors must be of the same length.')
   }
-};
+}
 
-export default Vector;
+export default Vector

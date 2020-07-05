@@ -1,4 +1,4 @@
-import babySharkLyrics, { printChorus } from './solution';
+import babySharkLyrics, { printChorus } from './solution'
 
 describe('printChorus', () => {
   test('returns correct result', () => {
@@ -8,9 +8,9 @@ Baby shark, doo doo doo doo doo doo\n\
 Baby shark, doo doo doo doo doo doo\n\
 Baby shark!\n";
 
-    expect(printChorus('Baby shark')).toEqual(expected);
-  });
-});
+    expect(printChorus('Baby shark')).toEqual(expected)
+  })
+})
 
 describe('babySharkLyrics', () => {
   test('returns correct result', () => {
@@ -41,12 +41,12 @@ Let's go hunt, doo doo doo doo doo doo\n\
 Let's go hunt!\n\
 Run away,…";
 
-    expect(babySharkLyrics()).toEqual(expected);
-  });
+    expect(babySharkLyrics()).toEqual(expected)
+  })
 
   test('is constructed with code that is shorter than 300 chars', () => {
-    const length = printChorus.toString().length;
+    const length = printChorus.toString().length
 
-    expect(length).toBeLessThan(300);
-  });
-});
+    expect(length).toBeLessThan(300)
+  })
+})

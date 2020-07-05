@@ -1,5 +1,3 @@
-const innerSquare = (rectangle, center, sides) => {
+const innerSquare = (rectangle, center, sides) => {}
 
-};
-
-export default innerSquare;
+export default innerSquare

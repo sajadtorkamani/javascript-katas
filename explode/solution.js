@@ -3,6 +3,6 @@ const explode = str => {
     .split('')
     .map(digit => digit.repeat(digit))
     .join('')
-};
+}
 
-export default explode;
+export default explode

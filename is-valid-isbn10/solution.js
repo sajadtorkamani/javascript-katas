@@ -4,13 +4,17 @@
  */
 const validISBN10 = str => {
   if (!/^\d{9}(\d|X)$/.test(str)) {
-    return false;
+    return false
   }
 
-  return str
-    .split('')
-    .map((digit, index) => digit === 'X' ? 100 : digit * (index + 1))
-    .reduce((sum, v) => sum + v) % 11 === 0;
-};
+  return (
+    str
+      .split('')
+      .map((digit, index) => (digit === 'X' ? 100 : digit * (index + 1)))
+      .reduce((sum, v) => sum + v) %
+      11 ===
+    0
+  )
+}
 
-export default validISBN10;
+export default validISBN10

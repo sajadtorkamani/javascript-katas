@@ -1,17 +1,17 @@
 const fizzbuzz = n => {
   if (n % 5 === 0 && n % 3 === 0) {
-    return 'fizz buzz';
+    return 'fizz buzz'
   }
 
   if (n % 3 === 0) {
-    return 'fizz';
+    return 'fizz'
   }
 
   if (n % 5 === 0) {
-    return 'buzz';
+    return 'buzz'
   }
 
-  return n;
-};
+  return n
+}
 
-export default fizzbuzz;
+export default fizzbuzz

@@ -5,14 +5,14 @@
  * @return {string}
  */
 const arithmeticSequenceElements = (first, diff, count) => {
-  let sequence = [first];
+  let sequence = [first]
 
-  for (let position = 1; position <= (count - 1); position++) {
-    const num = first + (position * diff);
-    sequence.push(num);
+  for (let position = 1; position <= count - 1; position++) {
+    const num = first + position * diff
+    sequence.push(num)
   }
 
-  return sequence.join(', ');
-};
+  return sequence.join(', ')
+}
 
-export default arithmeticSequenceElements;
+export default arithmeticSequenceElements

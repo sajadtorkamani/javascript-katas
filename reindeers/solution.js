@@ -3,13 +3,13 @@
  * @returns {number}
  */
 const reindeers = numPresents => {
-  const numReindeers = Math.ceil(numPresents / 30) + 2;
+  const numReindeers = Math.ceil(numPresents / 30) + 2
 
   if (numReindeers > 8) {
-    throw Error('Too many reindeers!');
+    throw Error('Too many reindeers!')
   }
 
-  return numReindeers;
-};
+  return numReindeers
+}
 
-export default reindeers;
+export default reindeers

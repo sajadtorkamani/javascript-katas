@@ -6,7 +6,8 @@
   "author": "Sajad Torkamani",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write */**.{js,ts,md}"
   },
   "dependencies": {
     "date-fns": "^1.30.1",

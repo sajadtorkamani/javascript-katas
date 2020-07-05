@@ -5,7 +5,7 @@
 const wordsToMarks = str => {
   return str
     .split('')
-    .reduce((sum, letter) => sum + letter.charCodeAt(0) - 96, 0);
-};
+    .reduce((sum, letter) => sum + letter.charCodeAt(0) - 96, 0)
+}
 
-export default wordsToMarks;
+export default wordsToMarks

@@ -1,4 +1,4 @@
-import matrixAddition from './solution';
+import matrixAddition from './solution'
 
 describe('matrixAddition', () => {
   test('returns correct result', () => {
@@ -14,5 +14,5 @@ describe('matrixAddition', () => {
         [ [3, 5], 
           [3, 5] ]
       );
-  });
-});
+  })
+})

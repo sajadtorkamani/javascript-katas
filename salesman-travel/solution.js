@@ -5,28 +5,28 @@
  */
 const travel = (addressesStr, zipCode) => {
   if (zipCode === '') {
-    return ':/';
+    return ':/'
   }
 
-  let streetNames = [];
-  let houseNumbers = [];
+  let streetNames = []
+  let houseNumbers = []
 
   const addresses = addressesStr
     .split(',')
     .filter(addr => addr.endsWith(zipCode))
-    .map(addr => addr.replace(' ' + zipCode, ''));
+    .map(addr => addr.replace(' ' + zipCode, ''))
 
   addresses.forEach(addr => {
-    let addrParts = addr.split(' ');
+    let addrParts = addr.split(' ')
 
-    const houseNumber = addrParts.shift();
-    const streetName = addrParts.join(' ');
+    const houseNumber = addrParts.shift()
+    const streetName = addrParts.join(' ')
 
-    streetNames.push(streetName);
-    houseNumbers.push(houseNumber);
-  });
+    streetNames.push(streetName)
+    houseNumbers.push(houseNumber)
+  })
 
-  return `${zipCode}:${streetNames.join(',')}/${houseNumbers.join(',')}`;
-};
+  return `${zipCode}:${streetNames.join(',')}/${houseNumbers.join(',')}`
+}
 
-export default travel;
+export default travel

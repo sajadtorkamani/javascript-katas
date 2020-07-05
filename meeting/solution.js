@@ -7,15 +7,23 @@ const meeting = str => {
     .toUpperCase()
     .split(';')
     .sort((a, b) => {
-      const [aFirstName, aLastName] = a.split(':');
-      const [bFirstName, bLastName] = b.split(':');
+      const [aFirstName, aLastName] = a.split(':')
+      const [bFirstName, bLastName] = b.split(':')
 
       return aLastName === bLastName
         ? aFirstName.localeCompare(bFirstName)
-        : aLastName.localeCompare(bLastName);
+        : aLastName.localeCompare(bLastName)
     })
-    .map(guest => '(' + guest.split(':').reverse().join(', ') + ')')
-    .join('');
-};
+    .map(
+      guest =>
+        '(' +
+        guest
+          .split(':')
+          .reverse()
+          .join(', ') +
+        ')'
+    )
+    .join('')
+}
 
-export default meeting;
+export default meeting

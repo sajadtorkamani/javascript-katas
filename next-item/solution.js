@@ -1,7 +1,7 @@
 const nextItem = (list, item) => {
-  const index = list.indexOf(item);
+  const index = list.indexOf(item)
 
-  return index > -1 ? list[index + 1] : undefined;
-};
+  return index > -1 ? list[index + 1] : undefined
+}
 
-export default nextItem;
+export default nextItem

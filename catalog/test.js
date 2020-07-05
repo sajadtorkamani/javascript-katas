@@ -1,4 +1,4 @@
-import catalog from './solution';
+import catalog from './solution'
 
 describe('catalog', () => {
   test('returns correct result', () => {
@@ -47,11 +47,15 @@ describe('catalog', () => {
 
 <prod><name>exhaust fan</name><prx>62</prx><qty>8</qty></prod>
 
-<prod><name>window fan</name><prx>62</prx><qty>8</qty></prod>`;
+<prod><name>window fan</name><prx>62</prx><qty>8</qty></prod>`
 
-    expect(catalog(xmlString, 'ladder')).toEqual('ladder > prx: $112 qty: 12');
-    expect(catalog(xmlString, 'saw')).toEqual('table saw > prx: $1099.99 qty: 5\r\nsaw > prx: $9 qty: 10\r\nsaw for metal > prx: $13.80 qty: 32');
-    expect(catalog(xmlString, 'wood pallet')).toEqual('wood pallet > prx: $65 qty: 21');
-    expect(catalog(xmlString, 'foobar')).toEqual('Nothing');
-  });
-});
+    expect(catalog(xmlString, 'ladder')).toEqual('ladder > prx: $112 qty: 12')
+    expect(catalog(xmlString, 'saw')).toEqual(
+      'table saw > prx: $1099.99 qty: 5\r\nsaw > prx: $9 qty: 10\r\nsaw for metal > prx: $13.80 qty: 32'
+    )
+    expect(catalog(xmlString, 'wood pallet')).toEqual(
+      'wood pallet > prx: $65 qty: 21'
+    )
+    expect(catalog(xmlString, 'foobar')).toEqual('Nothing')
+  })
+})

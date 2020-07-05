@@ -1,36 +1,34 @@
-const qs = require('querystring');
+const qs = require('querystring')
 
 /**
  * @param url {string}
  * @param [paramsToStrip] {Array<string>}
  */
 const stripUrlParams = (url, paramsToStrip = []) => {
-  const match = url.match(/(.+)\?(.+)/);
+  const match = url.match(/(.+)\?(.+)/)
 
   // Return unchanged url if no query params are present.
   if (!match) {
-    return url;
+    return url
   }
 
-  const domain = match[1];
-  const paramsString = match[2];
-  let newParams = {};
+  const domain = match[1]
+  const paramsString = match[2]
+  let newParams = {}
 
   // Remove duplicates
-  paramsString
-    .split('&')
-    .forEach(param => {
-      const [paramKey, paramValue] = param.split('=');
+  paramsString.split('&').forEach(param => {
+    const [paramKey, paramValue] = param.split('=')
 
-      if (!newParams.hasOwnProperty(paramKey)) {
-        newParams[paramKey] = paramValue;
-      }
-    });
+    if (!newParams.hasOwnProperty(paramKey)) {
+      newParams[paramKey] = paramValue
+    }
+  })
 
   // Strip blacklisted params
-  paramsToStrip.forEach(param => delete newParams[param]);
+  paramsToStrip.forEach(param => delete newParams[param])
 
-  return `${domain}?${qs.stringify(newParams)}`;
-};
+  return `${domain}?${qs.stringify(newParams)}`
+}
 
-export default stripUrlParams;
+export default stripUrlParams

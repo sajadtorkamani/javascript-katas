@@ -4,47 +4,47 @@
  * @return {boolean}
  */
 const isAnagram = (a, b) => {
-  const str1 = normalize(a);
-  const str2 = normalize(b);
+  const str1 = normalize(a)
+  const str2 = normalize(b)
 
   if (str1.length !== str2.length) {
-    return false;
+    return false
   }
 
-  const str2LetterCounts = getLetterCounts(str2);
+  const str2LetterCounts = getLetterCounts(str2)
 
   for (let letter in str2LetterCounts) {
-    const str2LetterCount = str2LetterCounts[letter];
-    const str1LetterCount = (str1.match(new RegExp(letter, 'g')) || []).length;
+    const str2LetterCount = str2LetterCounts[letter]
+    const str1LetterCount = (str1.match(new RegExp(letter, 'g')) || []).length
 
     if (str1LetterCount !== str2LetterCount) {
-      return false;
+      return false
     }
   }
 
-  return true;
-};
+  return true
+}
 
 /**
  * @param str
  * @return {string}
  */
-const normalize = str => str.toLowerCase().replace(/\W/g, '');
+const normalize = str => str.toLowerCase().replace(/\W/g, '')
 
 /**
  * @param str {string}
  * @returns {Object}
  */
 const getLetterCounts = str => {
-  let letterCounts = {};
+  let letterCounts = {}
 
-  str
-    .split('')
-    .forEach(letter => {
-      letterCounts[letter] = letterCounts.hasOwnProperty(letter) ? letterCounts[letter] + 1 : 1;
-    });
+  str.split('').forEach(letter => {
+    letterCounts[letter] = letterCounts.hasOwnProperty(letter)
+      ? letterCounts[letter] + 1
+      : 1
+  })
 
-  return letterCounts;
-};
+  return letterCounts
+}
 
-export default isAnagram;
+export default isAnagram

@@ -1,25 +1,25 @@
-import streetFighterSelection from './solution';
+import streetFighterSelection from './solution'
 
 describe('streetFighterSelection', () => {
   const FIGHTERS = [
     ['Ryu', 'E.Honda', 'Blanka', 'Guile', 'Balrog', 'Vega'],
     ['Ken', 'Chun Li', 'Zangief', 'Dhalsim', 'Sagat', 'M.Bison']
-  ];
+  ]
 
   test('returns correct result', () => {
-    const moves = ['up', 'left', 'right', 'left', 'left'];
-    const expectedResult = ['Ryu', 'Vega', 'Ryu', 'Vega', 'Balrog'];
+    const moves = ['up', 'left', 'right', 'left', 'left']
+    const expectedResult = ['Ryu', 'Vega', 'Ryu', 'Vega', 'Balrog']
 
     expect(streetFighterSelection(FIGHTERS, [0, 0], moves)).toEqual(
       expectedResult
-    );
-  });
+    )
+  })
 
   test('works with no moves', () => {
-    const moves = [];
+    const moves = []
 
-    expect(streetFighterSelection(FIGHTERS, [0, 0], moves)).toEqual([]);
-  });
+    expect(streetFighterSelection(FIGHTERS, [0, 0], moves)).toEqual([])
+  })
 
   test('handles left moves only', () => {
     const moves = [
@@ -31,7 +31,7 @@ describe('streetFighterSelection', () => {
       'left',
       'left',
       'left'
-    ];
+    ]
 
     expect(streetFighterSelection(FIGHTERS, [0, 0], moves)).toEqual([
       'Vega',
@@ -42,8 +42,8 @@ describe('streetFighterSelection', () => {
       'Ryu',
       'Vega',
       'Balrog'
-    ]);
-  });
+    ])
+  })
 
   test('handles right moves only', () => {
     const moves = [
@@ -55,7 +55,7 @@ describe('streetFighterSelection', () => {
       'right',
       'right',
       'right'
-    ];
+    ]
 
     expect(streetFighterSelection(FIGHTERS, [0, 0], moves)).toEqual([
       'E.Honda',
@@ -66,20 +66,11 @@ describe('streetFighterSelection', () => {
       'Ryu',
       'E.Honda',
       'Blanka'
-    ]);
-  });
+    ])
+  })
 
   test('handles vertical moves', () => {
-    const moves = [
-      'up',
-      'left',
-      'down',
-      'right',
-      'up',
-      'left',
-      'down',
-      'right'
-    ];
+    const moves = ['up', 'left', 'down', 'right', 'up', 'left', 'down', 'right']
 
     expect(streetFighterSelection(FIGHTERS, [0, 0], moves)).toEqual([
       'Ryu',
@@ -90,28 +81,28 @@ describe('streetFighterSelection', () => {
       'Vega',
       'M.Bison',
       'Ken'
-    ]);
-  });
+    ])
+  })
 
   test('handles down moves only', () => {
-    const moves = ['down', 'down', 'down', 'down'];
+    const moves = ['down', 'down', 'down', 'down']
 
     expect(streetFighterSelection(FIGHTERS, [0, 0], moves)).toEqual([
       'Ken',
       'Ken',
       'Ken',
       'Ken'
-    ]);
-  });
+    ])
+  })
 
   test('handles up moves only', () => {
-    const moves = ['up', 'up', 'up', 'up'];
+    const moves = ['up', 'up', 'up', 'up']
 
     expect(streetFighterSelection(FIGHTERS, [0, 0], moves)).toEqual([
       'Ryu',
       'Ryu',
       'Ryu',
       'Ryu'
-    ]);
-  });
-});
+    ])
+  })
+})

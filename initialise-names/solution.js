@@ -8,7 +8,7 @@ export const initializeNames = fullName => {
     .map((namePart, index, nameParts) => {
       return index === 0 || index === nameParts.length - 1
         ? namePart
-        : namePart[0] + '.';
+        : namePart[0] + '.'
     })
-    .join(' ');
-};
+    .join(' ')
+}

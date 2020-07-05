@@ -3,12 +3,12 @@
  * @return {Object}
  */
 const createSecretHolder = secret => {
-  let _secret = secret;
+  let _secret = secret
 
   return {
     getSecret: () => _secret,
-    setSecret: newSecret => _secret = newSecret
-  };
-};
+    setSecret: newSecret => (_secret = newSecret)
+  }
+}
 
-export default createSecretHolder;
+export default createSecretHolder

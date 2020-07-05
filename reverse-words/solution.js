@@ -9,9 +9,9 @@ const reverse = str => {
     .map((word, index) => {
       return index % 2 === 1
         ? word.split('').reverse().join('') // prettier-ignore
-        : word;
+        : word
     })
-    .join(' ');
-};
+    .join(' ')
+}
 
-export default reverse;
+export default reverse
