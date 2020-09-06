@@ -1,7 +1,7 @@
 {
   "name": "katas",
   "version": "1.0.0",
-  "description": "Boilerplate for doing code katas",
+  "description": "Bunch of code katas",
   "main": "index.js",
   "author": "Sajad Torkamani",
   "license": "MIT",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "date-fns": "^1.30.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "mem": "^5.1.1",
     "moment": "^2.24.0"
   },
