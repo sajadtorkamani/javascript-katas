@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/please-help-bob/train/javascript

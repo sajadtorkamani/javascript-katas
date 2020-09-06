@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/sort-by-example/train/javascript

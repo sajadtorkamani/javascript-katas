@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/sum-the-tree/train/javascript

@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/sum-up-the-random-string/train/javascript

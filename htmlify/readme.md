@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/htmlify-my-text/train/javascript

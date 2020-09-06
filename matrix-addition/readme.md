@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/matrix-addition/train/javascript

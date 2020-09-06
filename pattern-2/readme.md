@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/number-star-ladder/train/javascript

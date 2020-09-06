@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/ip-validation/train/javascript

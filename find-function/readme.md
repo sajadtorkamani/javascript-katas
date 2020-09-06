@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/find-the-anonymous-function/train/javascript

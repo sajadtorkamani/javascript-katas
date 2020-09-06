@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/coding-meetup-number-9-higher-order-functions-series-is-the-meetup-age-diverse/train/javascript

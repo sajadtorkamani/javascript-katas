@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/char-to-ascii/train/javascript

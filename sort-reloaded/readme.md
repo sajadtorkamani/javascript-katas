@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/the-sortreloaded-method/train/javascript

@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/99-bottles-of-beer-1/train/javascript

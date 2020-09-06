@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/noobcode-03-check-these-letters-dot-dot-dot-see-if-letters-in-string-1-are-present-in-string-2/train/javascript

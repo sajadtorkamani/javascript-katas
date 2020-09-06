@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/vasya-in-his-free-time/train/javascript

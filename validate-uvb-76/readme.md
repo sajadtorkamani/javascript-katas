@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/uvb-76-message-validator/train/javascript

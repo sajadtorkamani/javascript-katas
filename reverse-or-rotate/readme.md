@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/reverse-or-rotate/train/javascript

@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/coloured-triangles/train/javascript

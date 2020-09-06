@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/all-star-code-challenge-number-28/train/javascript

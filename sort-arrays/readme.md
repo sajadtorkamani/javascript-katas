@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/sort-2-arrays-together/train/javascript

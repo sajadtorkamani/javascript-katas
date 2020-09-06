@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/coding-meetup-number-10-higher-order-functions-series-create-usernames/train/javascript

@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/whats-up-next/train/javascript

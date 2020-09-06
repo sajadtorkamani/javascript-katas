@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/string-reversing-changing-case-etc/train/javascript

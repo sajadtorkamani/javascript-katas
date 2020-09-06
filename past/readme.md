@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/beginner-series-number-2-clock/train/javascript

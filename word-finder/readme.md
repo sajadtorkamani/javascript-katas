@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/word-finder/train/javascript

@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/odd-ones-out/train/javascript

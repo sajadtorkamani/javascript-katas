@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/ease-the-stockbroker/train/javascript

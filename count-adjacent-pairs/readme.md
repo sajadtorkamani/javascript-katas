@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/adjacent-pairs-in-a-string/train/javascript

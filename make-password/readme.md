@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/password-maker/train/javascript

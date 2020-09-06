@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/validate-credit-card-number/train/javascript

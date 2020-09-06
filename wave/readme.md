@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/mexican-wave/train/javascript

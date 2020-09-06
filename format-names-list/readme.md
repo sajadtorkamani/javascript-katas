@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/format-a-string-of-names-like-bart-lisa-and-maggie/train/javascript

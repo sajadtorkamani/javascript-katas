@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/love-vs-friendship/train/javascript

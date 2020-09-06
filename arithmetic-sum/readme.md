@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/arithmetic-sequence-sum-of-n-elements/train/javascript

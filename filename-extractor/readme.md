@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/extract-file-name/train/javascript

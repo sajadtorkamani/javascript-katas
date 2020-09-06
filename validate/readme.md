@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/regex-password-validation/train/javascript

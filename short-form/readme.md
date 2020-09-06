@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/bobs-short-forms/train/javascript

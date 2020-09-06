@@ -1,1 +1,0 @@
-https://www.codewars.com/kata/hide-phone-numbers/train/javascript
