@@ -1,0 +1,30 @@
+#!/usr/bin/env ts-node
+
+const fs = require('fs')
+const path = require('path')
+
+const kataName = process.argv[2]
+
+if (typeof kataName === 'undefined') {
+  console.error('Please provide a name.')
+  process.exit(1)
+}
+
+const kataDir = path.join(process.cwd(), 'src', kataName)
+const solutionFile = path.join(kataDir, `${kataName}.ts`)
+const testFile = path.join(kataDir, `${kataName}.spec.ts`)
+
+if (fs.existsSync(kataDir)) {
+  console.error(`Directory already exists: ${kataDir}`)
+  process.exit(1)
+}
+
+fs.mkdirSync(kataDir)
+fs.writeFileSync(solutionFile, '')
+fs.writeFileSync(testFile, '')
+
+console.log('Created files:')
+console.log('----------------')
+console.log(solutionFile)
+console.log(testFile)
+
