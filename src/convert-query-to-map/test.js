@@ -26,8 +26,6 @@ describe('convertQueryToMap', () => {
 
     const actual = convertQueryToMap(query)
 
-    console.log(actual)
-
     const expected = {
       user: {
         '1': { name: 'Alice' },

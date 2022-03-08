@@ -10,7 +10,5 @@ export const trouble = (nums, target) => {
     }
   }
 
-  console.log(indexesToRemove)
-
   return nums.filter((num, index) => !indexesToRemove.includes(index))
 }
