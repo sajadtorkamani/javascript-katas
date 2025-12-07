@@ -13,7 +13,7 @@ describe('displayValue', () => {
     expect(displayValue(100)).toEqual('1 hour 40 minutes')
   })
 
-  test('misc', () => {
+  test('handles longer minutes', () => {
     expect(displayValue(40321)).toEqual('1 month 1 minute')
     expect(displayValue(52874)).toEqual(
       '1 month 1 week 1 day 17 hours 14 minutes'

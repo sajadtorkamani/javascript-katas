@@ -1,12 +1,5 @@
-/**
- Given some `minutes`, return a human-readable string in the form of:
- `x month x week x day x hours x minutes`
- */
-
-// 1 month = 40,320
-// 1 week = 10,080 minutes
-// 1 day = 1440 minutes
-// 1 hour = 60 minutes
+// Given some `minutes`, return a human-readable string in the form of:
+// `x month x week x day x hours x minutes`
 export function displayValue(totalMins: number): string {
   const MONTH_MINS = 40320
   const WEEK_MINS = 10080
@@ -21,27 +14,27 @@ export function displayValue(totalMins: number): string {
 
   // Calculate months
   const months = Math.floor(minsRemaining / MONTH_MINS)
-
-  // Get mins left after calculating number of months
-  minsRemaining = months ? minsRemaining % MONTH_MINS : minsRemaining
+  if (months) {
+    minsRemaining = minsRemaining % MONTH_MINS
+  }
 
   // Calculate weeks
   const weeks = Math.floor(minsRemaining / WEEK_MINS)
-
-  // Get mins left after calculating number of weeks
-  minsRemaining = weeks ? minsRemaining % WEEK_MINS : minsRemaining
+  if (weeks) {
+    minsRemaining = minsRemaining % WEEK_MINS
+  }
 
   // Calculate days
   const days = Math.floor(minsRemaining / DAY_MINS)
-
-  // Get mins left after calculating days of weeks
-  minsRemaining = days ? minsRemaining % DAY_MINS : minsRemaining
+  if (days) {
+    minsRemaining = minsRemaining % DAY_MINS
+  }
 
   // Calculate hours
   const hours = Math.floor(minsRemaining / HOUR_MINS)
-
-  // Get mins left after calculating days of hours
-  minsRemaining = hours ? minsRemaining % HOUR_MINS : minsRemaining
+  if (hours) {
+    minsRemaining = minsRemaining % HOUR_MINS
+  }
 
   const result = []
 
